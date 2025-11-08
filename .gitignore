@@ -1,0 +1,9 @@
+# Ignorar todos os vídeos
+*.mp4
+*.mkv
+*.avi
+*.mov
+
+# Ou ignorar uma pasta específica
+videos/
+aulas_conceituais/
