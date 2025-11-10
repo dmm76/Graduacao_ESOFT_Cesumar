@@ -1,0 +1,46 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f2f2f2;      
+    }
+
+h1{
+    color: #8fea8f;
+}
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .caixa {
+      background-color: #ffffff;
+      border: 2px solid #ccc;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px rgba(29, 117, 59, 0.1);
+    }
+
+    #caixa1 {
+      background-color: #5ba1c1;
+      color: aqua;
+    }
+
+    #caixa2 {
+      background-color: #a62752;
+      color: #eb5688;
+    }
+
+    #caixa3 {
+      background-color: #327f32;
+      color: #8fea8f;;
+    }
+
+    @media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

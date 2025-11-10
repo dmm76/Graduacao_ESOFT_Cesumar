@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Unidade 2 - Pilhas e Filas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #fff;
+            color: #333;
+        }
+        h1 {
+            color: #004080;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #004080;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resumo – Unidade 2: Pilhas e Filas</h1>
+    <pre>
+Resumo – Unidade 2: Pilhas e Filas
+
+1. Conceitos Iniciais
+
+Pilhas e filas são estruturas de dados do tipo estático, construídas geralmente com vetores.
+A principal diferença entre elas está na forma como os elementos são inseridos e removidos:
+
+- Pilha: estrutura LIFO (Last In, First Out) – último a entrar é o primeiro a sair.
+- Fila: estrutura FIFO (First In, First Out) – primeiro a entrar é o primeiro a sair.
+
+2. Pilhas
+
+A pilha funciona como uma pilha de pratos: o último prato colocado no topo é o primeiro a ser retirado.
+
+Declaração da estrutura em C:
+#define TAM 10
+struct Pilha {
+    int dados[TAM];
+    int topo;
+};
+
+Operações principais:
+- push: empilhar um novo elemento
+- pop: desempilhar o elemento do topo
+
+Exemplo de empilhamento:
+void push(struct Pilha *p, int valor) {
+    if (p->topo == TAM) {
+        printf("Pilha cheia!\n");
+        return;
+    }
+    p->dados[p->topo] = valor;
+    p->topo++;
+}
+
+Exemplo de desempilhamento:
+int pop(struct Pilha *p) {
+    if (p->topo == 0) {
+        printf("Pilha vazia!\n");
+        return -1;
+    }
+    p->topo--;
+    return p->dados[p->topo];
+}
+
+3. Filas
+
+A fila é como uma fila de banco: quem chega primeiro é atendido primeiro.
+
+Declaração da estrutura em C:
+#define TAM 10
+struct Fila {
+    int dados[TAM];
+    int ini;
+    int fim;
+};
+
+Operações principais:
+- enqueue: inserir no final (fim)
+- dequeue: remover do início (ini)
+
+Exemplo de inserção na fila:
+void enqueue(struct Fila *f, int valor) {
+    if (f->fim == TAM) {
+        printf("Fila cheia!\n");
+        return;
+    }
+    f->dados[f->fim] = valor;
+    f->fim++;
+}
+
+Exemplo de remoção:
+int dequeue(struct Fila *f) {
+    if (f->ini == f->fim) {
+        printf("Fila vazia!\n");
+        return -1;
+    }
+    int valor = f->dados[f->ini];
+    f->ini++;
+    return valor;
+}
+
+Observação: a fila "consome" espaço ao longo do tempo, pois o índice inicial avança.
+Em implementações mais robustas, usamos filas circulares para aproveitar melhor o espaço.
+
+4. Comparação entre Pilha e Fila:
+
+| Estrutura | Inserção | Remoção |
+|-----------|----------|---------|
+| Pilha     | Topo     | Topo    |
+| Fila      | Final    | Início  |
+
+---
+
+QUESTÕES FREQUENTES (ESTILO PROVA)
+
+1. O que é uma pilha?
+- Uma estrutura de dados do tipo LIFO, onde o último elemento inserido é o primeiro a ser removido.
+
+2. Qual função realiza a remoção de elementos na pilha?
+- pop()
+
+3. Como funciona a inserção em uma fila?
+- Inserção ocorre no final, remoção no início (estrutura FIFO).
+
+4. O que acontece ao remover um item de uma fila vazia?
+- O programa deve acusar erro ou retornar valor inválido.
+
+5. Para que serve a constante TAM?
+- Define o tamanho máximo da estrutura (pilha ou fila).
+
+6. Como evitar estouro de pilha ou fila?
+- Usando verificações antes da inserção ou remoção.
+
+7. O que acontece se não controlar o avanço do índice em uma fila?
+- A fila pode parecer cheia mesmo havendo espaço livre no início.
+
+</pre>
+</body>
+</html>

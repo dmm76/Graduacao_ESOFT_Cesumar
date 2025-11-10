@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="trocaTema()">Troca o tema</button>
+
+    <script>
+      function trocaTema() {
+        let temaAtual = localStorage.getItem("tema");
+        let novoTema = temaAtual === "dark" ? "light" : "dark";
+
+        document.body.className = novoTema;
+        localStorage.setItem("tema", novoTema);
+      }
+
+      document.body.className = localStorage.getItem("tema") || "light";
+    </script>
+
+    <style>
+      body.light {
+        background-color: white;
+        color: black;
+      }
+
+      body.dark {
+        background-color: #613d83;
+        color: white;
+      }
+    </style>
+  </body>
+</html>

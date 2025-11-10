@@ -1,0 +1,130 @@
+graph TD
+    %% Atores (Stick Figures)
+    Organizador((Organizador<br/>de Eventos))
+    Participante((Participante))
+    Admin((Administrador<br/>do Sistema))
+    
+    %% APIs Externas (também são atores)
+    PagamentoAPI((API de<br/>Pagamento))
+    StreamingAPI((API de<br/>Streaming))
+    CertificacaoAPI((API de<br/>Certificação))
+
+    %% Sistema Principal
+    subgraph Sistema["🏢 Sistema de Gestão de Eventos Híbridos"]
+        
+        %% Casos de Uso - Autenticação e Perfil
+        UC01(Realizar Login)
+        UC02(Cadastrar Usuário)
+        UC03(Recuperar Senha)
+        UC04(Gerenciar Perfil)
+        
+        %% Casos de Uso - Gestão de Eventos
+        UC05(Criar Evento)
+        UC06(Editar Evento)
+        UC07(Configurar Evento<br/>Híbrido)
+        UC08(Publicar Evento)
+        UC09(Gerenciar Agenda)
+        
+        %% Casos de Uso - Inscrições e Pagamentos
+        UC10(Realizar Inscrição)
+        UC11(Processar Pagamento)
+        UC12(Cancelar Inscrição)
+        UC13(Validar Participação)
+        
+        %% Casos de Uso - Transmissão
+        UC14(Iniciar Transmissão)
+        UC15(Assistir Evento<br/>Online)
+        UC16(Gerenciar Chat<br/>ao Vivo)
+        UC17(Gravar Evento)
+        
+        %% Casos de Uso - Certificação
+        UC18(Gerar Certificado<br/>Digital)
+        UC19(Verificar<br/>Autenticidade)
+        UC20(Enviar Certificado)
+        
+        %% Casos de Uso - Analytics
+        UC21(Visualizar Dashboard)
+        UC22(Gerar Relatórios)
+        UC23(Monitorar<br/>Participação)
+        
+        %% Casos de Uso - Networking
+        UC24(Conectar<br/>Participantes)
+        UC25(Enviar Mensagens)
+        UC26(Criar Salas<br/>Virtuais)
+        
+        %% Casos de Uso - Administração
+        UC27(Gerenciar Usuários)
+        UC28(Configurar Sistema)
+        UC29(Aplicar Políticas<br/>LGPD)
+        UC30(Monitorar<br/>Performance)
+    end
+
+    %% Conexões do Organizador
+    Organizador --- UC01
+    Organizador --- UC02
+    Organizador --- UC03
+    Organizador --- UC04
+    Organizador --- UC05
+    Organizador --- UC06
+    Organizador --- UC07
+    Organizador --- UC08
+    Organizador --- UC09
+    Organizador --- UC13
+    Organizador --- UC14
+    Organizador --- UC16
+    Organizador --- UC17
+    Organizador --- UC18
+    Organizador --- UC20
+    Organizador --- UC21
+    Organizador --- UC22
+    Organizador --- UC23
+
+    %% Conexões do Participante
+    Participante --- UC01
+    Participante --- UC02
+    Participante --- UC03
+    Participante --- UC04
+    Participante --- UC10
+    Participante --- UC12
+    Participante --- UC15
+    Participante --- UC19
+    Participante --- UC24
+    Participante --- UC25
+    Participante --- UC26
+
+    %% Conexões do Administrador
+    Admin --- UC01
+    Admin --- UC27
+    Admin --- UC28
+    Admin --- UC29
+    Admin --- UC30
+
+    %% Conexões com APIs Externas (atores secundários)
+    UC11 --- PagamentoAPI
+    UC14 --- StreamingAPI
+    UC15 --- StreamingAPI
+    UC17 --- StreamingAPI
+    UC18 --- CertificacaoAPI
+    UC19 --- CertificacaoAPI
+    UC20 --- CertificacaoAPI
+
+    %% Relacionamentos Include
+    UC05 -.->|<<include>>| UC01
+    UC10 -.->|<<include>>| UC11
+    UC18 -.->|<<include>>| UC13
+
+    %% Relacionamentos Extend
+    UC15 -.->|<<extend>>| UC16
+    UC14 -.->|<<extend>>| UC17
+
+    %% Estilos
+    classDef actor fill:#87CEEB,stroke:#4682B4,stroke-width:3px,color:#000
+    classDef usecase fill:#FFE4E1,stroke:#CD5C5C,stroke-width:2px,color:#000
+    classDef api fill:#F0E68C,stroke:#DAA520,stroke-width:2px,color:#000
+    classDef system fill:#E6FFE6,stroke:#32CD32,stroke-width:3px
+
+    %% Aplicar estilos
+    class Organizador,Participante,Admin,PagamentoAPI,StreamingAPI,CertificacaoAPI actor
+    class UC01,UC02,UC03,UC04,UC05,UC06,UC07,UC08,UC09,UC10,UC11,UC12,UC13,UC14,UC15,UC16,UC17,UC18,UC19,UC20,UC21,UC22,UC23,UC24,UC25,UC26,UC27,UC28,UC29,UC30 usecase
+    class PagamentoAPI,StreamingAPI,CertificacaoAPI api
+    class Sistema system

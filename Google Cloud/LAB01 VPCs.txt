@@ -1,0 +1,18 @@
+gcloud compute networks create managementnet --project=qwiklabs-gcp-02-83e0fc740e97 --subnet-mode=custom --mtu=1460 --bgp-routing-mode=regional --bgp-best-path-selection-mode=legacy && gcloud compute networks subnets create managementsubnet-1 --project=qwiklabs-gcp-02-83e0fc740e97 --range=10.130.0.0/20 --stack-type=IPV4_ONLY --network=managementnet --region=us-east1
+
+
+-----------------------------linhas de comando------------------------
+1.Execute o comando a seguir para criar a rede privatenet:
+gcloud compute networks create privatenet --subnet-mode=custom
+
+2.Execute o seguinte comando para criar a sub-rede privatesubnet-1:
+gcloud compute networks subnets create privatesubnet-1 --network=privatenet --region=us-east1 --range=172.16.0.0/24
+
+3.Execute o seguinte comando para criar a sub-rede privatesubnet-2:
+gcloud compute networks subnets create privatesubnet-2 --network=privatenet --region=europe-west1 --range=172.20.0.0/20
+
+4- listar
+gcloud compute networks list
+
+5- listar redes vpc disponiveis
+gcloud compute networks subnets list --sort-by=NETWORK

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.container{			
+			display: flex;
+			flex-direction: row-reverse;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			/*align-items: center;*/
+			margin: 20px;
+			background-color: white;
+		}
+		
+		.retangulo{
+			width: 200px;
+			height: 200px;
+			/*border: 1px solid black;*/
+			text-align: center;
+			color: white;
+			margin: 10px;
+					}
+		.azul{
+			background-color: blue;
+			font-family: Montserrat;
+			 font-weight: 400;
+			 color: yellow;
+
+		}
+		.verde{
+			background-color: green;
+			font-family: "Roboto Serif", serif;
+			 font-weight: 400;
+		}
+
+		.vermelho{
+			background-color: orangered;
+		}
+		.amarelo{
+			background-color: yellowgreen;
+		}
+
+		h2{
+			margin: 10px;
+			border: 1px solid blue;
+		}
+
+		.retangulo-botao{
+			border: 1px solid blue;
+		}
+
+		.retangulo-botao #botao{
+			margin-left: 15px;
+		}
+		h1{
+			display: inline;			
+			text-align: center;
+			background-color: blue;
+			padding: 100px;
+		}
+		.container-h1{
+			float: left;
+  			overflow: hidden;
+		}
+
+	</style>
+	<title>Primeiro Flex</title>
+</head>
+<body>
+	<div class="container-h1"><h1>Lista de Tarefas</h1></div>	
+	<p>Esse parágrafo ocupa a linha toda.</p>
+	<p>Esse parágrafo ocupa a linha toda.</p>
+	<div class="container">
+		<div class="retangulo-botao">
+			<div class="retangulo azul"><h2>box azul</h2></div>
+			<button id="botao">Clique</button>
+		</div>
+		<div class="retangulo azul"><h2>box azul</h2><button>Clique</button></div>
+		<div class="retangulo verde"><h2>box azul</h2><button>Clique</button></div>
+		<div class="retangulo vermelho"><h2>box azul</h2><button>Clique</button></div>
+		<div class="retangulo amarelo"><h2>box azul</h2><button>Clique</button></div>		
+	</div>
+
+</body>
+</html>

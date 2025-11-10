@@ -1,0 +1,155 @@
+/* ===== Estilo Global ===== */
+body {
+  background-color: aquamarine;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== Título ===== */
+h1 {
+  margin-bottom: 1rem;
+}
+
+/* ===== Container do Formulário e Resultado ===== */
+.container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* ===== Bloco que agrupa os campos ===== */
+.bloco-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* ===== Caixa de entrada (cadastro e notas) ===== */
+.aluno {
+  border: 2px solid steelblue;
+  border-radius: 8px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* ===== Campos de entrada ===== */
+input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* ===== Botão de envio ===== */
+form button {
+  align-self: center;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+form button:hover {
+  background-color: #1e4f7c;
+}
+
+/* ===== Caixa de resultado ===== */
+.resultado {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* ===== Estilo da mensagem exibida ===== */
+.mensagem {
+  background-color: #e0fce0;
+  color: #155724;
+  padding: 1rem;
+  border: 1px solid #a6d8a8;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* ===== Animação de entrada suave ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsividade para telas pequenas ===== */
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mensagem {
+    max-width: 100%;
+  }
+}
+
+.historico {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.historico h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: steelblue;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f0f8ff;
+}

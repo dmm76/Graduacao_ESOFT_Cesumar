@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Jogo de Perguntas</title>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Quiz Interativo</h1>
+    <h2 id="enunciado">Pergunta aparece aqui</h2>
+
+    <div id="alternativas">
+      <button class="alternativa" onclick="verificarResposta(this)"></button>
+      <button class="alternativa" onclick="verificarResposta(this)"></button>
+      <button class="alternativa" onclick="verificarResposta(this)"></button>
+      <button class="alternativa" onclick="verificarResposta(this)"></button>
+    </div>
+
+    <p id="feedback"></p>
+
+    <div class="info">
+      <span>Pontuação: <span id="pontuacao">0</span></span>
+      <span>Pergunta: <span id="contador">1</span></span>
+    </div>
+
+    <button id="proxima" onclick="proximaPergunta()">Próxima Pergunta</button>
+  </div>
+</body>
+</html>

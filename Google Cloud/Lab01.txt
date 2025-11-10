@@ -1,0 +1,107 @@
+gcloud config set compute/region us-central1
+
+gcloud config get-value compute/region
+
+gcloud config set compute/zone us-central1-c
+
+gcloud config get-value compute/zone
+
+
+informacoes
+gcloud config get-value project
+
+gcloud compute project-info describe --project $(gcloud config get-value project)
+
+Variaveis de ambiente
+Crie uma variável de ambiente para armazenar o ID do projeto:
+
+export PROJECT_ID=$(gcloud config get-value project)
+
+Crie uma variável de ambiente para armazenar a zona:
+
+export ZONE=$(gcloud config get-value compute/zone)
+
+verificar se esta criado: echo -e "PROJECT ID: $PROJECT_ID\nZONE: $ZONE"
+PROJECT ID: qwiklabs-gcp-02-b8e3ab3d458a
+ZONE: us-central1-c
+
+1M: Execute o comando a seguir para criar sua VM:
+gcloud compute instances create gcelab2 --machine-type e2-medium --zone $ZONE
+
+Detalhes do comando
+
+    gcloud compute permite gerenciar os recursos do Compute Engine de forma mais simples do que com a API Compute Engine.
+    instances create cria uma nova instância.
+    gcelab2 é o nome da VM.
+    A flag --machine-type especifica o tipo de máquina e2-medium.
+    A sinalização --zone especifica o local de criação da VM.
+    Ao omitir --zone, a ferramenta gcloud pode inferir a zona desejada com base nas propriedades padrão. Se as outras 	configurações de instância necessárias, como machine type e image, não forem especificadas no comando create, elas 	serão definidas com os valores padrão.
+
+NAME: gcelab2
+ZONE: us-central1-c
+MACHINE_TYPE: e2-medium
+PREEMPTIBLE: 
+INTERNAL_IP: 10.128.0.2
+EXTERNAL_IP: 35.232.17.244
+STATUS: RUNNING
+
+1.HELP: gcloud compute instances create --help (q para sair)
+
+COMANDos:
+
+gcloud -h
+
+gcloud config --help
+gcloud help config
+
+LISTA DE CONFIGURACOES
+gcloud config list
+gcloud config list --all
+gcloud components list
+
+FILTRAGEM DE SAIDA
+LISTE A INSTANCIA
+gcloud compute instances list
+
+LISTA A MAQUINA GCLAB2
+gcloud compute instances list --filter="name=('gcelab2')"
+
+LISTE AS REGRAS DE FIR
+gcloud compute firewall-rules list --filter="network='default'"
+
+
+Liste as regras de firewall da rede padrão em que a regra de permissão corresponde a uma regra ICMP:
+gcloud compute firewall-rules list --filter="NETWORK:'default' AND ALLOW:'icmp'"
+
+TESTAR AS CONEXOES COM AS INSTANCIAS
+gcloud compute ssh gcelab2 --zone $ZONE
+
+
+INSTALE O SERVIDOR NGINX
+sudo apt install -y nginx
+
+
+Adicione uma tag à máquina virtual:
+gcloud compute instances add-tags gcelab2 --tags http-server,https-server
+
+Atualize a regra de firewall para permitir o seguinte:
+gcloud compute firewall-rules create default-allow-http --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:80 --source-ranges=0.0.0.0/0 --target-tags=http-server
+
+liste as regras de firewall
+gcloud compute firewall-rules list --filter=ALLOW:'80'
+
+
+Verifique se a máquina virtual aceita a comunicação HTTP:
+curl http://$(gcloud compute instances list --filter=name:gcelab2 --format='value(10.128.0.2)')
+
+
+lista de eventos
+gcloud logging logs list
+gcloud logging logs list --filter="compute"
+gcloud logging read "resource.type=gce_instance" --limit 5
+gcloud logging read "resource.type=gce_instance AND labels.instance_name='gcelab2'" --limit 5
+
+
+
+
+

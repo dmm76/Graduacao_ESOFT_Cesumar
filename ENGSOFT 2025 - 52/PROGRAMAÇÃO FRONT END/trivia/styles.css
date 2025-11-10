@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  color: #fc0;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: -2px 2px 0 #c12e03;
+  margin-top: 20px;
+}
+
+.pergunta {
+  display: flex;
+  background-color: #030687;
+  border-right: 7px solid #787ad5;
+  flex-direction: column;
+  height: 100vh;
+  width: 50%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.box {
+  border: 4px solid #fc0;
+  background-color: #c12e03;
+  color: white;
+  font-weight: 700;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.enunciado {
+  text-align: center;
+}
+
+.alternativas {
+  padding: 0;
+}
+
+.alternativas li {
+  list-style: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.alternativas li:hover {
+  transform: scale(1.05);
+}
+
+.alternativas li::before {
+  content: counter(list-item);
+  color: #000080;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px 12px;
+  font-family: "B612 Mono", monospace;
+  font-weight: 700;
+}
+
+.selecionada {
+  background-color: aquamarine !important;
+  color: black !important;
+}
+
+.pontuacao,
+.pontuacaoLabel {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pontuacaoLabel {
+  margin-top: 5px;
+}
+
+.pontuacao .box,
+.pontuacaoLabel div {
+  width: 150px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.botoes button {
+  width: 40%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botoes button:hover {
+  background-color: #fc0;
+  color: #030687;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anton SC", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #030687;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+/* Estilização da mensagem exibida pelo JavaScript */
+.mensagem {
+  width: 90%;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid #fc0;
+  background-color: #787ad5;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Responsividade básica */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  .pergunta, .right {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .box, .mensagem {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .pontuacao, .pontuacaoLabel {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .botoes button {
+    width: 45%;
+  }
+}

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidade 3 – Listas Dinâmicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fcfcfc;
+            margin: 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+        }
+        h2 {
+            color: #006699;
+            margin-top: 30px;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 6px;
+            font-family: monospace;
+            display: block;
+            margin: 10px 0;
+        }
+        ul {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidade 3 – Listas Dinâmicas</h1>
+    
+<h2>Listas Encadeadas</h2>
+<p>Permitem alocação dinâmica e inserção/remoção eficiente sem realocação em memória.</p>
+<code>
+struct No {<br>
+&nbsp;&nbsp;int valor;<br>
+&nbsp;&nbsp;struct No* prox;<br>
+};
+</code>
+
+<h3>Variações:</h3>
+<ul>
+<li><strong>Lista simples:</strong> apenas um ponteiro para o próximo</li>
+<li><strong>Lista duplamente encadeada:</strong> ponteiros para anterior e próximo</li>
+<li><strong>Lista circular:</strong> o último aponta para o primeiro</li>
+</ul>
+
+</body>
+</html>

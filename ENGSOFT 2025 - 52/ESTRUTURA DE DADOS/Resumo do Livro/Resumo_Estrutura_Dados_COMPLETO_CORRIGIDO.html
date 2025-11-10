@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Estrutura de Dados I - Completo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #fff; color: #333; }
+        h1, h2 { color: #004080; }
+        h2 { border-bottom: 2px solid #004080; padding-bottom: 6px; margin-top: 50px; }
+        pre { background: #f4f4f4; padding: 15px; border-left: 4px solid #004080; white-space: pre-wrap; overflow-x: auto; }
+        nav a { display: block; margin: 5px 0; color: #0077cc; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Resumo Estrutura de Dados I – Completo</h1>
+    <nav>
+<a href="#unidade1">Unidade 1 – Ponteiros</a>
+<a href="#unidade2">Unidade 2 – Pilhas e Filas</a>
+<a href="#unidade3">Unidade 3 – Listas Dinâmicas</a>
+<a href="#unidade4">Unidade 4 – Grafos</a>
+<a href="#unidade5">Unidade 5 – Busca em Grafos</a>
+</nav>
+<h2 id="unidade1">Unidade 1 – Ponteiros</h2>
+<pre>📄 O conteúdo desta unidade está no PDF: <a href='Resumo_Unidade1_Completo.pdf' target='_blank'>Resumo_Unidade1_Completo.pdf</a></pre>
+<h2 id="unidade2">Unidade 2 – Pilhas e Filas</h2>
+<pre>Resumo – Unidade 2: Pilhas e Filas
+
+1. Conceitos Iniciais
+
+Pilhas e filas são estruturas de dados do tipo estático, construídas geralmente com vetores.
+A principal diferença entre elas está na forma como os elementos são inseridos e removidos:
+
+- Pilha: estrutura LIFO (Last In, First Out) – último a entrar é o primeiro a sair.
+- Fila: estrutura FIFO (First In, First Out) – primeiro a entrar é o primeiro a sair.
+
+2. Pilhas
+
+A pilha funciona como uma pilha de pratos: o último prato colocado no topo é o primeiro a ser retirado.
+
+Declaração da estrutura em C:
+#define TAM 10
+struct Pilha {
+    int dados[TAM];
+    int topo;
+};
+
+Operações principais:
+- push: empilhar um novo elemento
+- pop: desempilhar o elemento do topo
+
+Exemplo de empilhamento:
+void push(struct Pilha *p, int valor) {
+    if (p->topo == TAM) {
+        printf("Pilha cheia!\n");
+        return;
+    }
+    p->dados[p->topo] = valor;
+    p->topo++;
+}
+
+Exemplo de desempilhamento:
+int pop(struct Pilha *p) {
+    if (p->topo == 0) {
+        printf("Pilha vazia!\n");
+        return -1;
+    }
+    p->topo--;
+    return p->dados[p->topo];
+}
+
+3. Filas
+
+A fila é como uma fila de banco: quem chega primeiro é atendido primeiro.
+
+Declaração da estrutura em C:
+#define TAM 10
+struct Fila {
+    int dados[TAM];
+    int ini;
+    int fim;
+};
+
+Operações principais:
+- enqueue: inserir no final (fim)
+- dequeue: remover do início (ini)
+
+Exemplo de inserção na fila:
+void enqueue(struct Fila *f, int valor) {
+    if (f->fim == TAM) {
+        printf("Fila cheia!\n");
+        return;
+    }
+    f->dados[f->fim] = valor;
+    f->fim++;
+}
+
+Exemplo de remoção:
+int dequeue(struct Fila *f) {
+    if (f->ini == f->fim) {
+        printf("Fila vazia!\n");
+        return -1;
+    }
+    int valor = f->dados[f->ini];
+    f->ini++;
+    return valor;
+}
+
+Observação: a fila "consome" espaço ao longo do tempo, pois o índice inicial avança.
+Em implementações mais robustas, usamos filas circulares para aproveitar melhor o espaço.
+
+4. Comparação entre Pilha e Fila:
+
+| Estrutura | Inserção | Remoção |
+|-----------|----------|---------|
+| Pilha     | Topo     | Topo    |
+| Fila      | Final    | Início  |
+
+---
+
+QUESTÕES FREQUENTES (ESTILO PROVA)
+
+1. O que é uma pilha?
+- Uma estrutura de dados do tipo LIFO, onde o último elemento inserido é o primeiro a ser removido.
+
+2. Qual função realiza a remoção de elementos na pilha?
+- pop()
+
+3. Como funciona a inserção em uma fila?
+- Inserção ocorre no final, remoção no início (estrutura FIFO).
+
+4. O que acontece ao remover um item de uma fila vazia?
+- O programa deve acusar erro ou retornar valor inválido.
+
+5. Para que serve a constante TAM?
+- Define o tamanho máximo da estrutura (pilha ou fila).
+
+6. Como evitar estouro de pilha ou fila?
+- Usando verificações antes da inserção ou remoção.
+
+7. O que acontece se não controlar o avanço do índice em uma fila?
+- A fila pode parecer cheia mesmo havendo espaço livre no início.</pre>
+<h2 id="unidade3">Unidade 3 – Listas Dinâmicas</h2>
+<pre>Resumo – Unidade 3: Listas Dinâmicas
+
+1. Introdução
+
+Listas dinâmicas são estruturas de dados que permitem armazenar elementos de forma não contígua na memória, usando ponteiros.
+Diferente dos vetores, que precisam de tamanho fixo, listas dinâmicas se adaptam conforme a necessidade de inserção e remoção de dados.
+
+2. Lista Encadeada Simples
+
+Cada elemento (nó) armazena um valor e um ponteiro para o próximo nó. A lista termina quando o ponteiro for NULL.
+
+Exemplo da estrutura em C:
+struct No {
+    int valor;
+    struct No* prox;
+};
+
+Função para inserir no início:
+struct No* inserir_inicio(struct No* lista, int v) {
+    struct No* novo = (struct No*) malloc(sizeof(struct No));
+    novo->valor = v;
+    novo->prox = lista;
+    return novo;
+}
+
+Função para imprimir:
+void imprimir(struct No* lista) {
+    while (lista != NULL) {
+        printf("%d -> ", lista->valor);
+        lista = lista->prox;
+    }
+    printf("NULL\n");
+}
+
+3. Lista Duplamente Encadeada
+
+Cada nó possui três campos: valor, ponteiro para o anterior e ponteiro para o próximo.
+
+struct No {
+    int valor;
+    struct No* ant;
+    struct No* prox;
+};
+
+Vantagem: é possível navegar tanto para frente quanto para trás na lista.
+
+4. Lista Circular
+
+Na lista circular, o último nó aponta para o primeiro. Pode ser:
+- Simples: apenas próximo
+- Dupla: anterior e próximo
+
+Usada em aplicações que precisam de percursos contínuos, como playlists, jogos ou sistemas rotativos.
+
+5. Diferença entre as Listas
+
+| Tipo de Lista           | Ponteiros usados        | Direção de Navegação |
+|-------------------------|-------------------------|----------------------|
+| Simples Encadeada       | Apenas próximo          | Frente               |
+| Duplamente Encadeada    | Anterior e próximo      | Frente e trás        |
+| Circular Simples        | Apenas próximo          | Circular             |
+| Circular Duplamente Enc.| Anterior e próximo      | Circular nos dois    |
+
+---
+
+QUESTÕES FREQUENTES – ESTILO PROVA
+
+1. O que é uma lista dinâmica?
+- Uma estrutura de dados composta por nós ligados por ponteiros, com alocação dinâmica.
+
+2. Qual a principal vantagem da lista sobre o vetor?
+- Tamanho flexível e inserção/remoção sem necessidade de realocar a estrutura.
+
+3. Como detectar o fim de uma lista encadeada simples?
+- Quando o ponteiro prox de um nó for igual a NULL.
+
+4. Qual a diferença entre lista simples e lista duplamente encadeada?
+- A lista simples só aponta para frente; a duplamente encadeada aponta para frente e para trás.
+
+5. Para que serve uma lista circular?
+- Para navegar indefinidamente por elementos, reiniciando do começo ao fim automaticamente.
+
+6. Como é representado um nó de lista encadeada em C?
+  struct No {
+      int valor;
+      struct No* prox;
+  };
+
+7. Como inserir um nó no início da lista?
+  novo->prox = lista;
+  lista = novo;</pre>
+<h2 id="unidade4">Unidade 4 – Grafos</h2>
+<pre>Resumo – Unidade 4: Grafos
+
+1. O que são Grafos?
+
+Grafos são estruturas matemáticas utilizadas para representar relações entre objetos.
+Um grafo é composto por:
+- Vértices (ou nós): os pontos
+- Arestas: ligações entre os pontos
+
+Exemplo real: mapa de cidades (vértices) ligadas por estradas (arestas).
+
+2. Aplicações de Grafos
+
+- Mapas e rotas (GPS)
+- Redes sociais
+- Redes de computadores
+- Sistemas de recomendação
+
+3. Representação de Grafos em Computadores
+
+Existem duas formas principais de representar grafos:
+
+a) Matriz de Adjacência:
+- Usa uma matriz quadrada.
+- Se grafo[i][j] == 1, então existe aresta de i para j.
+
+Exemplo:
+grafo[0][2] = 1; // existe ligação do vértice 0 para o 2
+
+Vantagem: acesso direto (tempo constante)
+Desvantagem: ocupa muito espaço para grafos esparsos
+
+b) Lista de Adjacência:
+- Usa vetor de listas. Cada posição do vetor representa um vértice e contém uma lista com os vizinhos.
+
+Exemplo em C:
+struct No {
+    int vertice;
+    struct No* prox;
+};
+
+struct ListaAdj {
+    struct No* inicio;
+};
+
+Vantagem: ocupa menos memória para grafos com poucas conexões
+
+4. Tipos de Grafos
+
+- Não dirigido: arestas sem direção (ex: amizades)
+- Dirigido: arestas com direção (ex: seguidores)
+- Ponderado: cada aresta tem um peso (ex: distância, custo)
+
+5. Implementação Básica em C
+
+Representação com matriz:
+#define TAM 5
+int grafo[TAM][TAM] = {0};
+
+grafo[0][1] = 1;
+grafo[1][2] = 1;
+
+Representação com lista:
+struct No* lista[TAM];
+
+Adicionar vizinho:
+void adicionar_aresta(int origem, int destino) {
+    struct No* novo = malloc(sizeof(struct No));
+    novo->vertice = destino;
+    novo->prox = lista[origem];
+    lista[origem] = novo;
+}
+
+---
+
+QUESTÕES FREQUENTES – ESTILO PROVA
+
+1. O que é um grafo?
+- Estrutura composta por vértices e arestas, usada para representar relações.
+
+2. Diferença entre grafo dirigido e não dirigido?
+- No grafo dirigido, as conexões têm direção (A → B). No não dirigido, são bidirecionais (A — B).
+
+3. Quando usar matriz de adjacência?
+- Quando o grafo for pequeno ou denso (muitas ligações).
+
+4. Qual a vantagem da lista de adjacência?
+- Ocupa menos espaço em grafos com poucas conexões.
+
+5. O que significa uma aresta ponderada?
+- Uma aresta que possui um peso (ex: tempo, custo, distância).
+
+6. Como saber se há uma ligação entre dois vértices usando matriz?
+- Verificar se grafo[i][j] == 1.
+
+7. O que representa lista[i] em uma lista de adjacência?
+- Lista de vértices vizinhos ao vértice i.</pre>
+<h2 id="unidade5">Unidade 5 – Busca em Grafos</h2>
+<pre>Resumo – Unidade 5: Busca em Grafos
+
+1. Introdução
+
+Buscar em grafos significa visitar vértices de forma sistemática para encontrar caminhos, componentes, ciclos, entre outros.
+Existem dois algoritmos clássicos para isso:
+- Busca em Largura (BFS)
+- Busca em Profundidade (DFS)
+
+Além disso, estudamos o Algoritmo de Dijkstra, usado para encontrar o menor caminho.
+
+2. Busca em Profundidade (DFS)
+
+A DFS (Depth-First Search) explora um caminho até o fim antes de voltar.
+
+Exemplo de implementação em C:
+void dfs(int v, int visitado[], int grafo[TAM][TAM]) {
+    visitado[v] = 1;
+    printf("%d ", v);
+    for (int i = 0; i < TAM; i++) {
+        if (grafo[v][i] == 1 && !visitado[i]) {
+            dfs(i, visitado, grafo);
+        }
+    }
+}
+
+Aplicação: verificar conectividade, encontrar componentes.
+
+3. Busca em Largura (BFS)
+
+A BFS (Breadth-First Search) visita os vizinhos antes de aprofundar.
+
+Exemplo de implementação:
+void bfs(int inicio, int grafo[TAM][TAM]) {
+    int fila[TAM], visitado[TAM] = {0};
+    int ini = 0, fim = 0;
+
+    fila[fim++] = inicio;
+    visitado[inicio] = 1;
+
+    while (ini < fim) {
+        int atual = fila[ini++];
+        printf("%d ", atual);
+        for (int i = 0; i < TAM; i++) {
+            if (grafo[atual][i] == 1 && !visitado[i]) {
+                fila[fim++] = i;
+                visitado[i] = 1;
+            }
+        }
+    }
+}
+
+Aplicação: encontrar o menor número de arestas até um destino, navegação por níveis.
+
+4. Algoritmo de Dijkstra
+
+Usado para encontrar o menor caminho entre dois vértices em grafos com pesos positivos.
+
+Exemplo básico:
+- Inicializa distâncias como infinito, exceto a origem (zero).
+- Usa um conjunto de vértices visitados.
+- Atualiza as distâncias dos vizinhos com base no menor caminho encontrado.
+
+Pseudo-código:
+dist[i] = INFINITO;
+dist[origem] = 0;
+
+Para cada vizinho:
+    se dist[vizinho] > dist[atual] + peso:
+        dist[vizinho] = dist[atual] + peso;
+
+Aplicações: GPS, redes, sistemas de transporte.
+
+---
+
+QUESTÕES FREQUENTES – ESTILO PROVA
+
+1. Para que serve a busca em profundidade (DFS)?
+- Explorar caminhos profundos, identificar componentes conectados, detectar ciclos.
+
+2. Para que serve a busca em largura (BFS)?
+- Explorar grafos em camadas, encontrar caminhos mínimos em número de arestas.
+
+3. Qual estrutura de dados é usada na BFS?
+- Fila (queue)
+
+4. Qual estrutura de dados é usada na DFS?
+- Pilha (pode ser recursiva)
+
+5. Qual a principal função do algoritmo de Dijkstra?
+- Encontrar o menor caminho entre um vértice de origem e todos os outros.
+
+6. O Dijkstra funciona com arestas negativas?
+- Não. Apenas com pesos positivos.
+
+7. Qual a diferença entre BFS e Dijkstra?
+- BFS funciona bem em grafos não ponderados. Dijkstra é para grafos ponderados.</pre>
+</body></html>

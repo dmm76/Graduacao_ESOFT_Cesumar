@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Unidade 3 - Listas Dinâmicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #fff;
+            color: #333;
+        }
+        h1 {
+            color: #004080;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #004080;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resumo – Unidade 3: Listas Dinâmicas</h1>
+    <pre>
+Resumo – Unidade 3: Listas Dinâmicas
+
+1. Introdução
+
+Listas dinâmicas são estruturas de dados encadeadas que permitem alocação e liberação de memória em tempo de execução.
+Diferente dos vetores, elas não exigem definir um tamanho fixo e são compostas por nós (nodes) ligados por ponteiros.
+
+2. Lista Encadeada Simples
+
+Cada nó possui dois campos: o dado (valor) e o ponteiro para o próximo nó.
+
+Exemplo da estrutura em C:
+struct No {
+    int valor;
+    struct No* prox;
+};
+
+Criação e inserção de um nó no início:
+struct No* inserir_inicio(struct No* lista, int v) {
+    struct No* novo = (struct No*) malloc(sizeof(struct No));
+    novo->valor = v;
+    novo->prox = lista;
+    return novo;
+}
+
+Percorrer e imprimir a lista:
+void imprimir(struct No* lista) {
+    while (lista != NULL) {
+        printf("%d -> ", lista->valor);
+        lista = lista->prox;
+    }
+    printf("NULL\n");
+}
+
+3. Lista Duplamente Encadeada
+
+Cada nó aponta para o próximo e também para o anterior. Permite navegação nos dois sentidos.
+
+Exemplo da estrutura:
+struct No {
+    int valor;
+    struct No* ant;
+    struct No* prox;
+};
+
+4. Lista Circular
+
+Na lista circular, o último nó aponta de volta para o primeiro, formando um ciclo.
+Pode ser simples ou duplamente encadeada.
+
+Vantagens:
+- Não precisa de NULL para representar o fim.
+- Facilita algumas operações cíclicas, como em jogos ou sistemas circulares.
+
+5. Comparativo das Estruturas
+
+| Tipo de Lista           | Ponteiros          | Direção de Navegação |
+|-------------------------|--------------------|----------------------|
+| Simples Encadeada       | Apenas para frente | Unidirecional        |
+| Duplamente Encadeada    | Frente e trás      | Bidirecional         |
+| Circular Simples        | Para frente        | Cíclica              |
+| Circular Dupla          | Frente e trás      | Cíclica bidirecional |
+
+---
+
+QUESTÕES FREQUENTES (ESTILO PROVA)
+
+1. O que é uma lista dinâmica?
+- Uma estrutura composta por nós alocados dinamicamente, ligados por ponteiros.
+
+2. Qual a vantagem sobre os vetores?
+- Não requer tamanho fixo; facilita inserções e remoções.
+
+3. Como declarar um nó de lista simples em C?
+  struct No {
+      int valor;
+      struct No* prox;
+  };
+
+4. Como saber se é o fim da lista simples?
+- Quando o ponteiro prox for NULL.
+
+5. O que diferencia a lista duplamente encadeada?
+- Possui ponteiros para o anterior e o próximo nó.
+
+6. Para que serve a lista circular?
+- Para percursos repetitivos e aplicações cíclicas.
+
+7. Como inserir um nó no início de uma lista simples?
+  novo->prox = lista; lista = novo;
+</pre>
+</body>
+</html>

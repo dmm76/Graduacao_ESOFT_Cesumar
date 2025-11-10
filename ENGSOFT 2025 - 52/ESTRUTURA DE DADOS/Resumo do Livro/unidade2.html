@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidade 2 – Pilhas e Filas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fcfcfc;
+            margin: 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+        }
+        h2 {
+            color: #006699;
+            margin-top: 30px;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 6px;
+            font-family: monospace;
+            display: block;
+            margin: 10px 0;
+        }
+        ul {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidade 2 – Pilhas e Filas</h1>
+    
+<h2>Pilhas</h2>
+<p>A pilha é uma estrutura de dados do tipo LIFO (Last In, First Out).</p>
+<p><strong>Exemplo real:</strong> Empilhar livros ou caixas – o último que entra é o primeiro que sai.</p>
+<code>
+#define TAM 10<br>
+struct Pilha {<br>
+&nbsp;&nbsp;int dados[TAM];<br>
+&nbsp;&nbsp;int topo;<br>
+};
+</code>
+<p>Operações:</p>
+<ul>
+<li><strong>push:</strong> inserir no topo</li>
+<li><strong>pop:</strong> remover do topo</li>
+</ul>
+
+<h2>Filas</h2>
+<p>A fila é uma estrutura de dados do tipo FIFO (First In, First Out).</p>
+<p><strong>Exemplo real:</strong> Fila de banco – o primeiro que entra é o primeiro a ser atendido.</p>
+<code>
+#define TAM 10<br>
+struct Fila {<br>
+&nbsp;&nbsp;int dados[TAM];<br>
+&nbsp;&nbsp;int ini, fim;<br>
+};
+</code>
+<p>Operações:</p>
+<ul>
+<li><strong>enqueue:</strong> inserir no final</li>
+<li><strong>dequeue:</strong> remover do início</li>
+</ul>
+
+</body>
+</html>

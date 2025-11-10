@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Estrutura de Dados I - Unidade 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fcfcfc;
+            margin: 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+        }
+        h2 {
+            color: #006699;
+            margin-top: 30px;
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 2px 5px;
+            font-family: monospace;
+            display: block;
+            margin: 10px 0;
+        }
+        ul {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resumo - Estrutura de Dados I (Unicesumar)</h1>
+    <h2>Unidade 1: Ponteiros</h2>
+
+    <h3>1. Estruturas Homogêneas e Heterogêneas</h3>
+    <ul>
+        <li><strong>Homogêneas:</strong> armazenam um único tipo de dado. Exemplo:
+            <code>int numeros[5];</code>
+        </li>
+        <li><strong>Heterogêneas:</strong> armazenam vários tipos. Exemplo:
+            <code>
+                struct Pessoa {<br>
+                &nbsp;&nbsp;char nome[50];<br>
+                &nbsp;&nbsp;int idade;<br>
+                };
+            </code>
+        </li>
+    </ul>
+
+    <h3>2. Vetores e Matrizes</h3>
+    <code>int dados[5];</code>
+    <code>float matriz[2][3];</code>
+
+    <h3>3. Registros (Structs)</h3>
+    <code>
+        struct Fraction {<br>
+        &nbsp;&nbsp;int numerator;<br>
+        &nbsp;&nbsp;int denominator;<br>
+        &nbsp;&nbsp;float value;<br>
+        };
+    </code>
+
+    <h3>4. Ponteiros</h3>
+    <code>
+        int x = 10;<br>
+        int *ptr = &x;<br>
+        printf("%d", *ptr); // imprime 10
+    </code>
+
+    <h3>5. Propriedades dos Ponteiros</h3>
+    <ul>
+        <li>Permitem navegação de memória: <code>ptr + 1</code> aponta 4 bytes à frente (int).</li>
+    </ul>
+
+    <h3>6. Alocação Dinâmica</h3>
+    <code>
+        int *ptr = (int *) malloc(sizeof(int));<br>
+        *ptr = 42;
+    </code>
+
+    <h3>7. Vetores Dinâmicos</h3>
+    <code>
+        int tam;<br>
+        scanf("%d", &tam);<br>
+        int *vetor = (int *) malloc(tam * sizeof(int));<br>
+        for (int i = 0; i < tam; i++) vetor[i] = pow(2, i);
+    </code>
+
+    <h2>Questões Frequentes</h2>
+    <ul>
+        <li><strong>1. Qual a diferença entre ponteiro e variável comum?</strong><br>
+        Variável guarda valor. Ponteiro guarda endereço.</li>
+
+        <li><strong>2. O que acontece ao usar *ptr sem alocação?</strong><br>
+        Erro de execução (acesso a endereço inválido).</li>
+
+        <li><strong>3. Quando usar alocação dinâmica?</strong><br>
+        Quando o tamanho dos dados é incerto durante a codificação.</li>
+    </ul>
+</body>
+</html>

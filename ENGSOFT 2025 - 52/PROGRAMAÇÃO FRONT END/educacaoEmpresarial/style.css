@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: "Roboto Flex", sans-serif; */
+}
+
+:root {
+  --bg-color: #ebe4d2;
+  --headline-footer-color: #748873;
+  --bg-div-cursos: #e4c9ad;
+  --text-color: #ffffff;
+  --text-color-hover: #d1a980;
+  --form-buttom-hover: #445944;
+  --main-font: "UoqMunThenKhung", serif;
+}
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem; 
+}
+
+/* Estilos gerais (mantenha os seus estilos existentes e adicione estes) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+}
+
+.logo {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Estilos para o Menu Responsivo (Hamburger) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 50px;
+  background-color: var(--headline-footer-color);
+  color: var(--text-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-right: 70px;
+  font-size: 1.4rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text-color-hover);
+}
+
+.hamburger {
+  display: none; /* Escondido por padrão em telas maiores */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px; /* Espaçamento entre as barras */
+}
+
+.hamburger .bar {
+  /* Adicionei.bar aqui para ser mais específico */
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem 6rem 2rem;
+  /* background-color: var(--text-color); */
+}
+
+.headline p {
+  text-align: justify;
+}
+
+.div-headline {
+  width: 50%;
+  padding: 1rem;
+}
+
+.div-headline h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.div-headline h2 {
+  text-align: justify;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.div-sobre {
+  flex: 1 1 500px;
+  max-width: 600px;
+  padding: 1rem;
+  margin-left: 3rem;
+}
+
+.div-sobre h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.div-sobre p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.div-cursos {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  background-color: var(--bg-div-cursos);
+  transition: transform 0.2s ease-in-out;
+}
+
+.div-cursos:hover {
+  transform: scale(1.05);
+}
+
+.div-cursos img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.imagem-headline {
+  width: 50%;
+  text-align: center;
+}
+
+.imagem-headline img {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sobre-mim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 1.5rem 2rem;
+  /* background-color: #eee; */
+  text-align: justify;
+}
+
+.sobre-mim h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.sobre-mim img {
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sobre-mim p {
+  text-align: justify;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.imagem-sobre {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-sobre img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cursos {
+  padding: 4rem 2rem;
+  /* background-color: #fff; */
+  text-align: center;
+}
+
+.container-cursos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+
+
+.contato {
+  padding: 4rem 2rem;
+  /* background-color: #ddd; */
+  text-align: center;
+}
+
+.contato h2{
+  color: var(--form-buttom-hover);
+  font-size: 2.5rem;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.footer {
+  background-color: var(--headline-footer-color);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-family: "UoqMunThenKhung", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1rem;
+  /* font-weight: bold; */
+}
+
+/* Estilos para o Formulário de Contato */
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto; /* Centraliza o formulário */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--headline-footer-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: calc(100% - 20px); /* Ajusta a largura considerando o padding */
+  padding: 10px;
+  border: 1px solid var(--headline-footer-color);
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+.form-group textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.contact-form button {
+  background-color: var(--headline-footer-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--form-buttom-hover)
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: green;
+  font-size: 1em;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e6ffe6;
+  border: 1px solid #c6f6c6;
+  border-radius: 4px;
+  display: none; /* Escondido por padrão, mostrado via JS */
+}
+
+/* Media Query para telas menores (mobile) */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+
+  .headline {
+    min-height: calc(100vh - 150px); /* altura visível menos header/footer */
+    display: flex;
+    align-items: center;
+  }
+
+  .div-headline,
+  .imagem-headline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .div-headline h1,
+  .div-headline h2 {
+    text-align: center;
+  }
+
+  .div-headline h1 {
+    font-size: 1.5rem;
+  }
+
+  .div-headline h2 {
+    font-size: 1rem;
+  }
+
+  .div-headline p {
+    font-size: 0.95rem;
+  }
+
+  .div-cursos {
+    width: 90%;
+  }
+
+  .imagem-headline img {
+    width: 90%;
+  }
+
+  .sobre-mim img {
+    width: 90%;
+  }
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: none; /* Esconde os links por padrão em mobile */
+    flex-direction: column;
+    width: 100%;
+    background-color: #444; /* Fundo para o menu aberto */
+    position: absolute;
+    top: 60px; /* Ajuste conforme a altura da sua navbar */
+    left: 0;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex; /* Mostra os links quando a classe 'active' está presente */
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #555; /* Separador para os links */
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  .hamburger {
+    display: flex; /* Mostra o ícone hambúrguer em mobile */
+  }
+
+  /* Animação do ícone hambúrguer */
+  .hamburger.active.bar:nth-child(1) {
+    /* Adicionei.bar aqui */
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger.active.bar:nth-child(2) {
+    /* Adicionei.bar aqui */
+    opacity: 0;
+  }
+
+  .hamburger.active.bar:nth-child(3) {
+    /* Adicionei.bar aqui */
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Unidade 4 - Grafos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #fff;
+            color: #333;
+        }
+        h1 {
+            color: #004080;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #004080;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resumo – Unidade 4: Grafos</h1>
+    <pre>
+Resumo – Unidade 4: Grafos
+
+1. O que são Grafos?
+
+Grafos são estruturas matemáticas utilizadas para representar relações entre objetos.
+Um grafo é composto por:
+- Vértices (ou nós): os pontos
+- Arestas: ligações entre os pontos
+
+Exemplo real: mapa de cidades (vértices) ligadas por estradas (arestas).
+
+2. Aplicações de Grafos
+
+- Mapas e rotas (GPS)
+- Redes sociais
+- Redes de computadores
+- Sistemas de recomendação
+
+3. Representação de Grafos em Computadores
+
+Existem duas formas principais de representar grafos:
+
+a) Matriz de Adjacência:
+- Usa uma matriz quadrada.
+- Se grafo[i][j] == 1, então existe aresta de i para j.
+
+Exemplo:
+grafo[0][2] = 1; // existe ligação do vértice 0 para o 2
+
+Vantagem: acesso direto (tempo constante)
+Desvantagem: ocupa muito espaço para grafos esparsos
+
+b) Lista de Adjacência:
+- Usa vetor de listas. Cada posição do vetor representa um vértice e contém uma lista com os vizinhos.
+
+Exemplo em C:
+struct No {
+    int vertice;
+    struct No* prox;
+};
+
+struct ListaAdj {
+    struct No* inicio;
+};
+
+Vantagem: ocupa menos memória para grafos com poucas conexões
+
+4. Tipos de Grafos
+
+- Não dirigido: arestas sem direção (ex: amizades)
+- Dirigido: arestas com direção (ex: seguidores)
+- Ponderado: cada aresta tem um peso (ex: distância, custo)
+
+5. Implementação Básica em C
+
+Representação com matriz:
+#define TAM 5
+int grafo[TAM][TAM] = {0};
+
+grafo[0][1] = 1;
+grafo[1][2] = 1;
+
+Representação com lista:
+struct No* lista[TAM];
+
+Adicionar vizinho:
+void adicionar_aresta(int origem, int destino) {
+    struct No* novo = malloc(sizeof(struct No));
+    novo->vertice = destino;
+    novo->prox = lista[origem];
+    lista[origem] = novo;
+}
+
+---
+
+QUESTÕES FREQUENTES – ESTILO PROVA
+
+1. O que é um grafo?
+- Estrutura composta por vértices e arestas, usada para representar relações.
+
+2. Diferença entre grafo dirigido e não dirigido?
+- No grafo dirigido, as conexões têm direção (A → B). No não dirigido, são bidirecionais (A — B).
+
+3. Quando usar matriz de adjacência?
+- Quando o grafo for pequeno ou denso (muitas ligações).
+
+4. Qual a vantagem da lista de adjacência?
+- Ocupa menos espaço em grafos com poucas conexões.
+
+5. O que significa uma aresta ponderada?
+- Uma aresta que possui um peso (ex: tempo, custo, distância).
+
+6. Como saber se há uma ligação entre dois vértices usando matriz?
+- Verificar se grafo[i][j] == 1.
+
+7. O que representa lista[i] em uma lista de adjacência?
+- Lista de vértices vizinhos ao vértice i.
+</pre>
+</body>
+</html>

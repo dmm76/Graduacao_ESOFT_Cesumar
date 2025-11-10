@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Mensagem na Tela</title>
+  </head>
+  <body>    
+    <h1 id="texto">Formulário de Testes</h1><br>
+
+    <!-- FORMULÁRIO -->
+   
+      <h2>Digite seu nome:</h2>
+      <input type="text" id="nomeInput" placeholder="Seu nome aqui" />
+
+      <h2>Digite sua mensagem:</h2>
+      <input type="text" id="declaracaoInput" placeholder="Sua mensagem aqui" />
+
+      <h2>Digite seu ano de nascimento</h2>
+      <input type="text" id="idadeInput" placeholder="Sua idade aqui">
+      
+      <button onclick="imprimirNome()">Enviar</button>
+   
+
+    <!-- ÁREA DE RESPOSTA -->
+    <p id="mensagem">mensagem</p>
+    <script>
+      let a = 10
+      let b = 20
+      const imprimirNome = () =>{         
+          let resultado = a + b;
+          let nome = document.getElementById("nomeInput").value;     
+           document.getElementById("texto").textContent = "Seu nome é " + nome + " Valor: " + resultado;        
+      }      
+    </script>
+    
+  </body>
+</html>

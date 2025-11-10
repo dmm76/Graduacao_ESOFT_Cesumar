@@ -1,0 +1,32 @@
+<section id="home">
+      <div class="container">
+        <h1 class="logo logo-home">TREINO BRUTO</h1>
+        <h2 class="sub">Nosso site está ficando gigante...</h2>
+        <p>
+          Estamos preparando algo insano para quem vive o treino de verdade!
+        </p>
+
+        <a href="mailto:douglas.monquero@gmail.com" class="btn"
+          >Avise-me no lançamento</a
+        >
+
+        <!-- Logo do Felipe Rocha -->
+        <div class="logo-felipe">
+          <img src="images/logo.png" alt="Logo Felipe Rocha" />
+        </div>
+
+        <!-- redes sociais se quiser manter aqui também -->
+        <div class="social">
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+              alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+              alt="Facebook"
+          /></a>
+        </div>
+      </div>
+    </section>

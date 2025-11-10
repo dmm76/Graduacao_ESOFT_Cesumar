@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Unidade 5 - Busca em Grafos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #fff;
+            color: #333;
+        }
+        h1 {
+            color: #004080;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #004080;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resumo – Unidade 5: Busca em Grafos</h1>
+    <pre>
+Resumo – Unidade 5: Busca em Grafos
+
+1. Introdução
+
+Buscar em grafos significa visitar vértices de forma sistemática para encontrar caminhos, componentes, ciclos, entre outros.
+Existem dois algoritmos clássicos para isso:
+- Busca em Largura (BFS)
+- Busca em Profundidade (DFS)
+
+Além disso, estudamos o Algoritmo de Dijkstra, usado para encontrar o menor caminho.
+
+2. Busca em Profundidade (DFS)
+
+A DFS (Depth-First Search) explora um caminho até o fim antes de voltar.
+
+Exemplo de implementação em C:
+void dfs(int v, int visitado[], int grafo[TAM][TAM]) {
+    visitado[v] = 1;
+    printf("%d ", v);
+    for (int i = 0; i < TAM; i++) {
+        if (grafo[v][i] == 1 && !visitado[i]) {
+            dfs(i, visitado, grafo);
+        }
+    }
+}
+
+Aplicação: verificar conectividade, encontrar componentes.
+
+3. Busca em Largura (BFS)
+
+A BFS (Breadth-First Search) visita os vizinhos antes de aprofundar.
+
+Exemplo de implementação:
+void bfs(int inicio, int grafo[TAM][TAM]) {
+    int fila[TAM], visitado[TAM] = {0};
+    int ini = 0, fim = 0;
+
+    fila[fim++] = inicio;
+    visitado[inicio] = 1;
+
+    while (ini < fim) {
+        int atual = fila[ini++];
+        printf("%d ", atual);
+        for (int i = 0; i < TAM; i++) {
+            if (grafo[atual][i] == 1 && !visitado[i]) {
+                fila[fim++] = i;
+                visitado[i] = 1;
+            }
+        }
+    }
+}
+
+Aplicação: encontrar o menor número de arestas até um destino, navegação por níveis.
+
+4. Algoritmo de Dijkstra
+
+Usado para encontrar o menor caminho entre dois vértices em grafos com pesos positivos.
+
+Exemplo básico:
+- Inicializa distâncias como infinito, exceto a origem (zero).
+- Usa um conjunto de vértices visitados.
+- Atualiza as distâncias dos vizinhos com base no menor caminho encontrado.
+
+Pseudo-código:
+dist[i] = INFINITO;
+dist[origem] = 0;
+
+Para cada vizinho:
+    se dist[vizinho] > dist[atual] + peso:
+        dist[vizinho] = dist[atual] + peso;
+
+Aplicações: GPS, redes, sistemas de transporte.
+
+---
+
+QUESTÕES FREQUENTES – ESTILO PROVA
+
+1. Para que serve a busca em profundidade (DFS)?
+- Explorar caminhos profundos, identificar componentes conectados, detectar ciclos.
+
+2. Para que serve a busca em largura (BFS)?
+- Explorar grafos em camadas, encontrar caminhos mínimos em número de arestas.
+
+3. Qual estrutura de dados é usada na BFS?
+- Fila (queue)
+
+4. Qual estrutura de dados é usada na DFS?
+- Pilha (pode ser recursiva)
+
+5. Qual a principal função do algoritmo de Dijkstra?
+- Encontrar o menor caminho entre um vértice de origem e todos os outros.
+
+6. O Dijkstra funciona com arestas negativas?
+- Não. Apenas com pesos positivos.
+
+7. Qual a diferença entre BFS e Dijkstra?
+- BFS funciona bem em grafos não ponderados. Dijkstra é para grafos ponderados.
+</pre>
+</body>
+</html>

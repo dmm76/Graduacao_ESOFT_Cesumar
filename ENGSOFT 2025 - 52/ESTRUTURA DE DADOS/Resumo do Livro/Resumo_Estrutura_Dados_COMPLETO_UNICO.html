@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Completo - Estrutura de Dados I</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #fff; color: #333; }
+        h1, h2 { color: #004080; }
+        h2 { border-bottom: 2px solid #004080; padding-bottom: 4px; }
+        pre { background: #f9f9f9; padding: 15px; border-left: 4px solid #004080; white-space: pre-wrap; }
+        nav { margin-bottom: 30px; }
+        nav a { display: block; margin-bottom: 5px; color: #0077cc; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Resumo Completo – Estrutura de Dados I (Unicesumar)</h1>
+    <nav>
+<a href="#unidade1">Unidade 1 – Ponteiros</a>
+<a href="#unidade2">Unidade 2 – Pilhas e Filas</a>
+<a href="#unidade3">Unidade 3 – Listas Dinâmicas</a>
+<a href="#unidade4">Unidade 4 – Grafos</a>
+<a href="#unidade5">Unidade 5 – Busca em Grafos</a>
+</nav>
+<h2 id="unidade1">Unidade 1 – Ponteiros</h2>
+<pre>Resumo da Unidade 1 já entregue separadamente em PDF</pre>
+<h2 id="unidade2">Unidade 2 – Pilhas e Filas</h2>
+<pre>
+Resumo – Unidade 2: Pilhas e Filas
+
+1. Conceitos Iniciais
+Pilhas (LIFO) e Filas (FIFO) são estruturas que controlam a ordem de entrada e saída de dados.
+
+2. Pilhas
+Usa vetor e um topo.
+Operações:
+- push: insere no topo
+- pop: remove do topo
+
+Código:
+#define TAM 10
+struct Pilha { int dados[TAM]; int topo; };
+
+3. Filas
+Usa vetor com início e fim.
+Operações:
+- enqueue: insere no fim
+- dequeue: remove do início
+
+Código:
+#define TAM 10
+struct Fila { int dados[TAM]; int ini, fim; };
+
+4. Comparação:
+| Estrutura | Inserção | Remoção |
+|-----------|----------|---------|
+| Pilha     | Topo     | Topo    |
+| Fila      | Final    | Início  |
+</pre>
+<h2 id="unidade3">Unidade 3 – Listas Dinâmicas</h2>
+<pre>
+Resumo – Unidade 3: Listas Dinâmicas
+
+1. Introdução
+Listas ligadas usam nós encadeados por ponteiros.
+
+2. Lista Simples
+Cada nó aponta para o próximo.
+struct No { int valor; struct No* prox; };
+
+3. Lista Dupla
+Aponta para anterior e próximo.
+struct No { int valor; struct No* ant, *prox; };
+
+4. Lista Circular
+Último nó aponta para o primeiro.
+
+5. Comparativo:
+| Tipo de Lista           | Ponteiros          | Navegação |
+|-------------------------|--------------------|-----------|
+| Simples Encadeada       | Próximo            | Frente    |
+| Duplamente Encadeada    | Anterior e Próximo | Dois lados|
+| Circular Simples        | Próximo            | Circular  |
+</pre>
+<h2 id="unidade4">Unidade 4 – Grafos</h2>
+<pre>
+Resumo – Unidade 4: Grafos
+
+1. Conceito
+Grafo = vértices + arestas
+
+2. Representações:
+a) Matriz de Adjacência:
+int grafo[5][5];
+grafo[i][j] = 1 indica conexão.
+
+b) Lista de Adjacência:
+struct No { int vertice; struct No* prox; };
+
+3. Tipos:
+- Dirigido / Não-dirigido
+- Ponderado / Não-ponderado
+
+4. Aplicações: redes, mapas, redes sociais.
+</pre>
+<h2 id="unidade5">Unidade 5 – Busca em Grafos</h2>
+<pre>
+Resumo – Unidade 5: Busca em Grafos
+
+1. DFS – Busca em Profundidade
+Visita um caminho até o fim antes de voltar.
+
+2. BFS – Busca em Largura
+Visita todos os vizinhos antes de avançar.
+
+3. Algoritmo de Dijkstra
+Menor caminho entre dois vértices com pesos positivos.
+
+Usa vetor de distâncias:
+dist[v] = menor caminho de origem até v
+</pre>
+</body></html>

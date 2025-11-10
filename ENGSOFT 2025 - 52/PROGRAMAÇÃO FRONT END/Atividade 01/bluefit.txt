@@ -1,0 +1,1059 @@
+
+<!DOCTYPE html><!-- Last Published: Sat Jun 14 2025 13:33:35 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.bluefit.com.br" data-wf-page="64dbdfb6c42ae706219438c0" data-wf-site="64dbdfb5c42ae70621943853" lang="pt"><head><meta charset="utf-8"/><title>Home | Bluefit</title><meta content="O preço mínimo pode variar entre os planos e as unidades. Consulte a relação de unidades em www.bluefit.com.br. Sujeito a alterações sem aviso prévio." name="description"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/css/bluefit.webflow.shared.528ecdfad.min.css" rel="stylesheet" type="text/css"/><style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="535f03e0-437c-0a4a-7886-81bac613dea8"] {-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="6be36ebb-e4ef-5e5e-65fd-1d2169eb9302"] {-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="e8c3eefc-c7b4-29bd-813e-2ac6806db843"] {-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}</style><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/65287d8d34fc7c58e87ccbc4_favicon_bluefit.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/65287da5bc13c92d30251640_webclip_blufit.png" rel="apple-touch-icon"/><!-- Google Tag Manager -->
+<script fs-cc-categories="marketing, analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFPBVHQ');</script>
+<!-- End Google Tag Manager -->
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+function hiddenSections(url, method = "GET") {
+  document.addEventListener("DOMContentLoaded", function () {
+    try {
+      const response = fetch(url, {
+        method
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Erro na chamada da API: ${response.statusText}`);
+          }
+
+          return response.json();
+        })
+        .then((response) => {
+          const { hiddenSections } = response;
+
+          hiddenSections.forEach((item) => {
+            console.log(item);
+            const section = document.querySelector(item.title);
+
+            if (section) section.remove();
+          });
+        });
+    } catch (error) {
+      console.error("Ocorreu um erro durante a chamada da API:", error);
+    }
+  });
+}
+</script>
+
+<!-- Finsweet Cookie Consent -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="opt-in"></script>
+
+<meta name="referrer" content="no-referrer-when-downgrade" /><!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+<!-- [Attributes by Finsweet] CMS Slider -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsslider@1/cmsslider.js"></script><script src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853%2F6544eda5f000985a163a8687%2F6735089c93565d92a6f07106%2Ffinsweetcomponentsconfig-1.0.0.js" type="module" async="" siteId="64dbdfb5c42ae70621943853" finsweet="components"></script><script type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}","hideDecimalForWholeNumbers":false};</script></head><body class="body-2"><div class="global-styles w-embed"><style>
+
+/* Fluid responsivity */
+  html { font-size: calc(0.625rem + 0.41666666666666663vw); }
+  @media screen and (max-width:1920px) { html { font-size: calc(0.625rem + 0.41666666666666674vw); } }
+  @media screen and (max-width:1440px) { html { font-size: calc(0.8126951092611863rem + 0.20811654526534862vw); } }
+  @media screen and (max-width:479px) { html { font-size: calc(0.7494769874476988rem + 0.8368200836820083vw); } }
+
+
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+</style></div><div class="page-wrapper"><div data-animation="over-right" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="nav w-nav"><nav role="navigation" class="nav_menu w-nav-menu"><div class="nav_side-grid-top"><div class="div-block-4"><div id="w-node-_39c18cac-d9ef-5099-26b7-e2cba3778f7d-a3778f78" class="menu-button w-nav-button"><div class="html-embed-4 w-embed"><svg width="24" height="24" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.85547 9.85742L23.1412 24.1431M23.1412 9.85742L8.85547 24.1431" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></div><a id="w-node-_39c18cac-d9ef-5099-26b7-e2cba3778f7b-a3778f78" href="/" aria-current="page" class="navbar_logo-wrapper w-inline-block w--current"><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/64e66e9676132596a04df0ff_logo-bluefit-footer.svg" loading="lazy" alt="" class="image-cover"/></a></div></div><div class="nav_side-grid-top-btns hide-desktop"><a id="w-node-_39c18cac-d9ef-5099-26b7-e2cba3778f80-a3778f78" href="#" class="button is-navbar w-inline-block"><div>Matricule-se</div></a><a id="w-node-_39c18cac-d9ef-5099-26b7-e2cba3778f84-a3778f78" href="#" class="button_white is-icon secondary secondary-navbar w-inline-block"><div>Área do Aluno</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div><div class="navbar-side_grid"><div id="w-node-_39c18cac-d9ef-5099-26b7-e2cba3778f89-a3778f78" class="navbar_col-wrapper"><h5 class="heading-style-h5 text-color-white is-navbar">Conheça</h5><div class="navbar_link-wrapper"><a href="/sobre" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Sobre nós</div></a><a href="/unidades" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Unidades</div></a><a href="/nosso-espaco" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Nosso Espaço</div></a><a href="/programas" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Programas</div></a><a href="/aulas" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Aulas</div></a></div></div><div id="w-node-_39c18cac-d9ef-5099-26b7-e2cba3778f9c-a3778f78" class="navbar_col-wrapper"><h5 class="heading-style-h5 text-color-white is-navbar">Veja Também</h5><div class="navbar_link-wrapper"><a href="/blog" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Blog</div></a><a href="/eventos" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Eventos</div></a><a href="/atendimento" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Contato</div></a><a href="https://ri.bluefit.com.br/" class="footer-link hide-link w-inline-block"><div class="text-size-small is-navbar">Para Investidores</div></a><a href="/indique-um-imovel" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Indique um imóvel</div></a></div></div><div id="w-node-_39c18cac-d9ef-5099-26b7-e2cba3778fb2-a3778f78" class="navbar_col-wrapper"><h5 class="heading-style-h5 text-color-white is-navbar">Saiba Mais</h5><div class="navbar_link-wrapper"><a href="/contratos" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Contratos</div></a><a href="/trabalhe-conosco" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Trabalhe Conosco</div></a><a href="https://www.canaldeetica.com.br/bluefit/" target="_blank" class="footer-link w-inline-block"><div class="text-size-small is-navbar">Canal de Denúncias</div></a></div></div><div id="w-node-_39c18cac-d9ef-5099-26b7-e2cba3778fbf-a3778f78" class="navbar_col-wrapper"><div class="footer_redes-sociais hide-mb"><div class="redes-sociais_brands-wrapper"><a href="https://www.linkedin.com/company/bluefit-academia/" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28.7522 25.5032H29.0359L28.4922 24.6807C28.8247 24.6807 29.0009 24.4695 29.0034 24.2107C29.0034 24.2007 29.0034 24.1895 29.0022 24.1795C29.0022 23.827 28.7897 23.6582 28.3534 23.6582H27.6484V25.5032H27.9134V24.6995H28.2397L28.7522 25.5032ZM28.2209 24.4907H27.9134V23.867H28.3034C28.5047 23.867 28.7347 23.8995 28.7347 24.1632C28.7347 24.4657 28.5022 24.4907 28.2197 24.4907" fill="white"/>
+<path d="M21.6138 22.3639H17.855V16.4777C17.855 15.0739 17.83 13.2677 15.9 13.2677C13.9425 13.2677 13.6425 14.7964 13.6425 16.3764V22.3639H9.885V10.2589H13.4937V11.9127H13.5437C14.28 10.6552 15.6475 9.90392 17.1038 9.95767C20.9137 9.95767 21.615 12.4639 21.615 15.7227L21.6138 22.3639ZM5.64375 8.60392C4.43875 8.60392 3.4625 7.62767 3.4625 6.42267C3.4625 5.21767 4.43875 4.24142 5.64375 4.24142C6.84875 4.24142 7.825 5.21767 7.825 6.42267C7.825 7.62767 6.84875 8.60392 5.64375 8.60392ZM7.5225 22.3639H3.76V10.2589H7.5225V22.3639ZM23.4875 0.751421H1.87125C0.85 0.740171 0.0125 1.55892 0 2.58017V24.2852C0.0125 25.3077 0.85 26.1264 1.87125 26.1152H23.4875C24.5113 26.1277 25.3525 25.3089 25.3662 24.2852V2.57892C25.3512 1.55517 24.51 0.736421 23.4875 0.750171" fill="white"/>
+<path d="M28.2536 22.8359C27.2986 22.8447 26.5311 23.6272 26.5411 24.5822C26.5499 25.5372 27.3324 26.3047 28.2874 26.2947C29.2424 26.2859 30.0099 25.5034 29.9999 24.5484C29.9911 23.6059 29.2286 22.8447 28.2874 22.8359H28.2536ZM28.2936 26.0959C27.4561 26.1097 26.7261 25.4434 26.7124 24.6059C26.6986 23.7684 27.3661 23.0784 28.2036 23.0647C29.0411 23.0509 29.7311 23.7184 29.7449 24.5559C29.7449 24.5647 29.7449 24.5722 29.7449 24.5809C29.7624 25.3997 29.1124 26.0784 28.2936 26.0959H28.2549H28.2936Z" fill="white"/>
+</svg></div></a><a href="https://www.instagram.com/bluefitacademia/" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.913 7.98245C26.8965 6.84746 26.6866 5.72146 26.2848 4.65993C25.5816 2.84723 24.1498 1.41387 22.3371 0.712184C21.289 0.317859 20.181 0.106453 19.0595 0.0824634C17.6172 0.0179921 17.1599 0 13.4985 0C9.83713 0 9.36784 1.00538e-07 7.93597 0.0824634C6.81597 0.106453 5.70796 0.317859 4.65993 0.712184C2.84723 1.41387 1.41387 2.84723 0.712183 4.65993C0.317859 5.70796 0.104953 6.81597 0.0839627 7.93597C0.0194913 9.37983 0 9.83713 0 13.4985C0 17.1599 -1.11709e-08 17.6277 0.0839627 19.061C0.106453 20.1825 0.317859 21.289 0.712183 22.3401C1.41537 24.1513 2.84723 25.5846 4.66143 26.2863C5.70496 26.6941 6.81297 26.925 7.93747 26.961C9.38133 27.0255 9.83863 27.045 13.5 27.045C17.1614 27.045 17.6307 27.045 19.0625 26.961C20.1825 26.9385 21.2905 26.7271 22.3401 26.3328C24.1528 25.6296 25.5846 24.1962 26.2878 22.385C26.6821 21.3355 26.8935 20.229 26.916 19.106C26.9805 17.6636 27 17.2064 27 13.5435C26.997 9.88211 26.997 9.41731 26.913 7.98245ZM13.4895 20.4224C9.66021 20.4224 6.55808 17.3203 6.55808 13.491C6.55808 9.66171 9.66021 6.55958 13.4895 6.55958C17.3158 6.55958 20.4209 9.66171 20.4209 13.491C20.4209 17.3203 17.3158 20.4224 13.4895 20.4224ZM20.6968 7.91948C19.8017 7.91948 19.0805 7.1968 19.0805 6.3032C19.0805 5.4096 19.8017 4.68692 20.6968 4.68692C21.5889 4.68692 22.3116 5.4096 22.3116 6.3032C22.3116 7.1968 21.5889 7.91948 20.6968 7.91948Z" fill="white"/>
+<path d="M13.4888 17.9933C15.9755 17.9933 17.9913 15.9774 17.9913 13.4908C17.9913 11.0041 15.9755 8.98828 13.4888 8.98828C11.0022 8.98828 8.98633 11.0041 8.98633 13.4908C8.98633 15.9774 11.0022 17.9933 13.4888 17.9933Z" fill="white"/>
+</svg></div></a><a href="https://www.facebook.com/bluefitacademia" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.93642 0.00488281C2.20186 0.00488281 0 2.20674 0 4.9413V22.1034C0 24.838 2.20186 27.0399 4.93642 27.0399H14.2381V16.4709H11.4434V12.6657H14.2381V9.41475C14.2381 6.86062 15.8894 4.5155 19.6933 4.5155C21.2334 4.5155 22.3723 4.66335 22.3723 4.66335L22.2827 8.21677C22.2827 8.21677 21.1212 8.2058 19.8538 8.2058C18.4821 8.2058 18.2621 8.83782 18.2621 9.88705V12.6657H22.3917L22.2117 16.4709H18.2621V27.0399H22.0985C24.8331 27.0399 27.0349 24.838 27.0349 22.1035V4.94133C27.0349 2.20677 24.8331 0.00490985 22.0985 0.00490985H4.93639L4.93642 0.00488281Z" fill="white"/>
+</svg></div></a><a href="https://www.tiktok.com/@bluefit" target="_blank" class="w-inline-block"><div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.995" height="26.995" viewBox="0 0 128 128">
+  <image width="128" height="128" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAwklEQVRIie3WIQoCURSF4X8mCBMFk0bBJIjBbWgUl2LVYDG7DIvZ4DIEk6hlwCAWgxy5wws2hXEuCO8s4H2cywsnkURIDZgCI6ANJJTLCdgBC+BYvGSYpIGkg6rJXdLEHGuWBblRssmn9NJwuqohy8qa7YGOA5Zbs5YDZMnSH/y6r2PY08lS6gQViVjEIhaxP8K82iXuZ7w6WQ/Dtk5YbhukCZwdsKE1uwDjiqEZsHlfxH1gDnSB+g+2yS3s0SWwBngB6tOMxgA9FXsAAAAASUVORK5CYII="/>
+  <image x="25" y="17" width="81" height="94" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAABT0lEQVQ4jaXUP0uWURjH8Y+Pj4RLUgYhQvmAW2uB5FbY2KC41JJD5CA4OtWgtLS0+AoaHFolkAgMIhx8A72CBhUXh/5IGhfcwtXh3HBjPzjc17/zvc+5zuEM9UZmddA+BuhhBVt5Sq8LAXcwjmt4XCa7Qg6TvYD+ZSBZAdj5X0joYdOnZUz3O0xo091mnFxmJT8Lf7QGmcMbbEZBJf+yOaFvjd/P27mH1w3kQuv4UUB+YbsZjzB1AZnBXuWvZ5XY1WR/lM77Q1H4G0cVQOi8DERPVnE9xTaaK34bxy2gfxQreZ4CX/Cqy8RyJYPkv2upO032lRokd3+qBXIj2Sc1yNfkv8DNouYtxpK/U+TFe3K/AEUz1/AdT/A05SI2WYPE9z0WW7aS9QC7te2EnlXuSlZcuqUaIDQ8NHwrvtH9ePLi8ZnACP7gAJ8xj09VPP4ChT8zP0TxsBQAAAAASUVORK5CYII="/>
+</svg></div></a></div></div><div class="navbar_link-wrapper"></div><div class="navbar_btn-group hide-desktop"><a href="/atendimento" class="button_white is-icon secondary secondary-navbar w-inline-block"><div>Converse com a Blue</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div></div><div id="w-node-_39c18cac-d9ef-5099-26b7-e2cba3778fd8-a3778f78" class="mobile-redes-sociais_brands-wrapper hide-desktop"><a href="https://www.linkedin.com/company/bluefit-academia/" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28.7522 25.5032H29.0359L28.4922 24.6807C28.8247 24.6807 29.0009 24.4695 29.0034 24.2107C29.0034 24.2007 29.0034 24.1895 29.0022 24.1795C29.0022 23.827 28.7897 23.6582 28.3534 23.6582H27.6484V25.5032H27.9134V24.6995H28.2397L28.7522 25.5032ZM28.2209 24.4907H27.9134V23.867H28.3034C28.5047 23.867 28.7347 23.8995 28.7347 24.1632C28.7347 24.4657 28.5022 24.4907 28.2197 24.4907" fill="white"/>
+<path d="M21.6138 22.3639H17.855V16.4777C17.855 15.0739 17.83 13.2677 15.9 13.2677C13.9425 13.2677 13.6425 14.7964 13.6425 16.3764V22.3639H9.885V10.2589H13.4937V11.9127H13.5437C14.28 10.6552 15.6475 9.90392 17.1038 9.95767C20.9137 9.95767 21.615 12.4639 21.615 15.7227L21.6138 22.3639ZM5.64375 8.60392C4.43875 8.60392 3.4625 7.62767 3.4625 6.42267C3.4625 5.21767 4.43875 4.24142 5.64375 4.24142C6.84875 4.24142 7.825 5.21767 7.825 6.42267C7.825 7.62767 6.84875 8.60392 5.64375 8.60392ZM7.5225 22.3639H3.76V10.2589H7.5225V22.3639ZM23.4875 0.751421H1.87125C0.85 0.740171 0.0125 1.55892 0 2.58017V24.2852C0.0125 25.3077 0.85 26.1264 1.87125 26.1152H23.4875C24.5113 26.1277 25.3525 25.3089 25.3662 24.2852V2.57892C25.3512 1.55517 24.51 0.736421 23.4875 0.750171" fill="white"/>
+<path d="M28.2536 22.8359C27.2986 22.8447 26.5311 23.6272 26.5411 24.5822C26.5499 25.5372 27.3324 26.3047 28.2874 26.2947C29.2424 26.2859 30.0099 25.5034 29.9999 24.5484C29.9911 23.6059 29.2286 22.8447 28.2874 22.8359H28.2536ZM28.2936 26.0959C27.4561 26.1097 26.7261 25.4434 26.7124 24.6059C26.6986 23.7684 27.3661 23.0784 28.2036 23.0647C29.0411 23.0509 29.7311 23.7184 29.7449 24.5559C29.7449 24.5647 29.7449 24.5722 29.7449 24.5809C29.7624 25.3997 29.1124 26.0784 28.2936 26.0959H28.2549H28.2936Z" fill="white"/>
+</svg></div></a><a href="https://www.instagram.com/bluefitacademia/" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.913 7.98245C26.8965 6.84746 26.6866 5.72146 26.2848 4.65993C25.5816 2.84723 24.1498 1.41387 22.3371 0.712184C21.289 0.317859 20.181 0.106453 19.0595 0.0824634C17.6172 0.0179921 17.1599 0 13.4985 0C9.83713 0 9.36784 1.00538e-07 7.93597 0.0824634C6.81597 0.106453 5.70796 0.317859 4.65993 0.712184C2.84723 1.41387 1.41387 2.84723 0.712183 4.65993C0.317859 5.70796 0.104953 6.81597 0.0839627 7.93597C0.0194913 9.37983 0 9.83713 0 13.4985C0 17.1599 -1.11709e-08 17.6277 0.0839627 19.061C0.106453 20.1825 0.317859 21.289 0.712183 22.3401C1.41537 24.1513 2.84723 25.5846 4.66143 26.2863C5.70496 26.6941 6.81297 26.925 7.93747 26.961C9.38133 27.0255 9.83863 27.045 13.5 27.045C17.1614 27.045 17.6307 27.045 19.0625 26.961C20.1825 26.9385 21.2905 26.7271 22.3401 26.3328C24.1528 25.6296 25.5846 24.1962 26.2878 22.385C26.6821 21.3355 26.8935 20.229 26.916 19.106C26.9805 17.6636 27 17.2064 27 13.5435C26.997 9.88211 26.997 9.41731 26.913 7.98245ZM13.4895 20.4224C9.66021 20.4224 6.55808 17.3203 6.55808 13.491C6.55808 9.66171 9.66021 6.55958 13.4895 6.55958C17.3158 6.55958 20.4209 9.66171 20.4209 13.491C20.4209 17.3203 17.3158 20.4224 13.4895 20.4224ZM20.6968 7.91948C19.8017 7.91948 19.0805 7.1968 19.0805 6.3032C19.0805 5.4096 19.8017 4.68692 20.6968 4.68692C21.5889 4.68692 22.3116 5.4096 22.3116 6.3032C22.3116 7.1968 21.5889 7.91948 20.6968 7.91948Z" fill="white"/>
+<path d="M13.4888 17.9933C15.9755 17.9933 17.9913 15.9774 17.9913 13.4908C17.9913 11.0041 15.9755 8.98828 13.4888 8.98828C11.0022 8.98828 8.98633 11.0041 8.98633 13.4908C8.98633 15.9774 11.0022 17.9933 13.4888 17.9933Z" fill="white"/>
+</svg></div></a><a href="https://www.facebook.com/bluefitacademia" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.93642 0.00488281C2.20186 0.00488281 0 2.20674 0 4.9413V22.1034C0 24.838 2.20186 27.0399 4.93642 27.0399H14.2381V16.4709H11.4434V12.6657H14.2381V9.41475C14.2381 6.86062 15.8894 4.5155 19.6933 4.5155C21.2334 4.5155 22.3723 4.66335 22.3723 4.66335L22.2827 8.21677C22.2827 8.21677 21.1212 8.2058 19.8538 8.2058C18.4821 8.2058 18.2621 8.83782 18.2621 9.88705V12.6657H22.3917L22.2117 16.4709H18.2621V27.0399H22.0985C24.8331 27.0399 27.0349 24.838 27.0349 22.1035V4.94133C27.0349 2.20677 24.8331 0.00490985 22.0985 0.00490985H4.93639L4.93642 0.00488281Z" fill="white"/>
+</svg></div></a><a href="https://www.tiktok.com/@bluefit" target="_blank" class="w-inline-block"><div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.995" height="26.995" viewBox="0 0 128 128">
+  <image width="128" height="128" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAwklEQVRIie3WIQoCURSF4X8mCBMFk0bBJIjBbWgUl2LVYDG7DIvZ4DIEk6hlwCAWgxy5wws2hXEuCO8s4H2cywsnkURIDZgCI6ANJJTLCdgBC+BYvGSYpIGkg6rJXdLEHGuWBblRssmn9NJwuqohy8qa7YGOA5Zbs5YDZMnSH/y6r2PY08lS6gQViVjEIhaxP8K82iXuZ7w6WQ/Dtk5YbhukCZwdsKE1uwDjiqEZsHlfxH1gDnSB+g+2yS3s0SWwBngB6tOMxgA9FXsAAAAASUVORK5CYII="/>
+  <image x="25" y="17" width="81" height="94" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAABT0lEQVQ4jaXUP0uWURjH8Y+Pj4RLUgYhQvmAW2uB5FbY2KC41JJD5CA4OtWgtLS0+AoaHFolkAgMIhx8A72CBhUXh/5IGhfcwtXh3HBjPzjc17/zvc+5zuEM9UZmddA+BuhhBVt5Sq8LAXcwjmt4XCa7Qg6TvYD+ZSBZAdj5X0joYdOnZUz3O0xo091mnFxmJT8Lf7QGmcMbbEZBJf+yOaFvjd/P27mH1w3kQuv4UUB+YbsZjzB1AZnBXuWvZ5XY1WR/lM77Q1H4G0cVQOi8DERPVnE9xTaaK34bxy2gfxQreZ4CX/Cqy8RyJYPkv2upO032lRokd3+qBXIj2Sc1yNfkv8DNouYtxpK/U+TFe3K/AEUz1/AdT/A05SI2WYPE9z0WW7aS9QC7te2EnlXuSlZcuqUaIDQ8NHwrvtH9ePLi8ZnACP7gAJ8xj09VPP4ChT8zP0TxsBQAAAAASUVORK5CYII="/>
+</svg></div></a></div></div><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/64e905f0f33fc13e99ea3d0b_Ellipse-navbar.png" loading="lazy" alt="" class="elipse-navbar"/></nav><div class="nav_content-wrapper container-large"><a href="/" aria-current="page" class="nav-brand nav-bar w-nav-brand w--current"><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/64dd11fbd510e8d611606706_bluefit-logo.svg" loading="lazy" alt="" class="image-3"/></a><div class="navbar_right-content-wrapper"><div class="desktop-nav-links-wrapper"><a data-w-id="d0bba6e1-e226-4150-e563-ed907fcbccbd" href="/sobre" class="navlink_wrapper w-inline-block"><div class="navlink_text">A Bluefit</div><div class="navlink_underline"></div></a><a data-w-id="0aafa1ae-69f0-f004-c131-3109c0f5161d" href="/unidades" class="navlink_wrapper w-inline-block"><div class="navlink_text">Unidades</div><div class="navlink_underline"></div></a><a data-w-id="a0f7ddf4-4409-15a0-75f9-fb7b36206e80" href="/programas" class="navlink_wrapper w-inline-block"><div class="navlink_text">Programas</div><div class="navlink_underline"></div></a></div><div class="navbar_btn-group show-desktop"><a href="https://evo-totem.w12app.com.br/bluefit/1/site/escolher-acao/cliente" class="button_white is-icon secondary secondary-navbar nav-bar w-inline-block"><div class="text-block-4">Área do Aluno</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a><a href="/checkout" class="button_white is-icon is-navbar nav-bar w-inline-block"><div class="text-block-3">Matricule-se</div><div class="icon-1x1-small rotate nav-bar w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div><div class="navbar_menu-button w-nav-button"><div class="navbar_menu-icon w-embed"><svg width="24" height="22" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 19.4997V22.1663H4V19.4997H20ZM24 10.1663V12.833H0V10.1663H24ZM20 0.833008V3.49967H4V0.833008H20Z" fill="white"/>
+</svg></div></div></div></div></div><main class="main-wrapper"><section class="section_hero-home"><div class="div-block-8"></div><div slider-duration="5000" loop-mode="true" class="slider-hero_component home"><div class="swiper is-slider-hero w-dyn-list"><div role="list" class="swiper-wrapper is-slider-hero w-dyn-items"><div role="listitem" class="swiper-slide is-slider-hero w-dyn-item"><a href="https://www.bluefit.com.br/unidades" class="slider-hero_img-height w-inline-block"><img alt="" loading="eager" url="https://www.bluefit.com.br/unidades" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/680eef6c6305ff658adc9d7a_v4_Site-Bluefit2735x750_Desktp.webp" class="image"/></a><div class="slider-hero_text-wrapper"><h1 class="text-color-white max-width-hero-text text-align-right banner-title">Banner Mês Abril</h1></div></div></div></div><div class="swiper-bullet-wrapper"><div class="swiper-bullet is-active"></div><div class="swiper-bullet"></div></div></div></section><section class="section_hero-home mobile"><div class="div-block-8"></div><div slider-duration="5000" loop-mode="true" class="slider-hero_component home"><div class="swiper is-slider-hero w-dyn-list"><div role="list" class="swiper-wrapper is-slider-hero w-dyn-items"><div role="listitem" class="swiper-slide is-slider-hero w-dyn-item"><a href="https://www.bluefit.com.br/unidades" class="slider-hero_img-height w-inline-block"><img alt="" loading="eager" url="https://www.bluefit.com.br/unidades" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/680ef1e2138b8d02bc0d869b_v4_Site-Bluefit320x293_Mobile.png" sizes="100vw" srcset="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/680ef1e2138b8d02bc0d869b_v4_Site-Bluefit320x293_Mobile-p-500.png 500w, https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/680ef1e2138b8d02bc0d869b_v4_Site-Bluefit320x293_Mobile.png 640w" class="image"/></a><div class="slider-hero_text-wrapper"><h1 class="text-color-white max-width-hero-text text-align-right banner-title">Academia Bluefit</h1></div></div></div></div><div class="swiper-bullet-wrapper"><div class="swiper-bullet is-active"></div><div class="swiper-bullet"></div></div></div></section><section id="homeVantagensSection" class="section_vantagens"><div class="padding-global"><div class="container-large is-home-intro"><div class="padding-section is-home-intro"><div class="vantagens_wrapper"><div class="vantagens_content-wrapper"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="porque-matricular_content"><div class="section_title"><h5 homeVantagensDesc="topTitle" class="home-intro_label-custom">Por que se</h5><h3 homeVantagensDesc="bottomTitle" class="heading-style-h3 is-home-intro">matricular?</h3></div><p homeVantagensDesc="desc" class="hide-mobile-landscape">Só a Bluefit reúne tudo que você precisa para não ter mais desculpas para não ir treinar: academias espalhadas por todo Brasil, abertas 24h, todos os dias da semana e com mais de 30 modalidades diferentes por um preço acessível. Escolha como, onde e quando se movimentar!</p><div class="padding-bottom padding-small hide"></div><div class="button-group"><a homeVantagensDesc="firstCtaLink" href="https://bluefit.com.br/#homeCadastroClienteSection" class="button is-icon is-small w-inline-block"><div homeVantagensDesc="firstCtaTitle" class="no-wrap">Matricule-se</div><div class="icon-1x1-small rotate hide w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div></div></div></div></div></div><div class="slider-vantagens_component"><div class="slider-vantagens_overflow"><div><div class="swiper is-slider-vantagens w-dyn-list"><div role="list" class="swiper-wrapper is-slider-vantagens w-dyn-items"><div role="listitem" class="swiper-slide is-slider-vantagens w-dyn-item"><div class="slider-vantagens_link"><div class="slider-vantagens_img-height"><img loading="lazy" alt="Comunidade ativa e inclusiva" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/68126cf93e728e8a89ebb81d_BLUEFIT-9716x930.webp" class="slider-vantagens_img"/></div><div class="slider-vantagens_text-wrap"><div class="slider-vantagens_title">Comunidade ativa e inclusiva</div><div class="slider-vantagens_desc">Faça parte de uma comunidade vibrante, onde cada conquista é celebrada. Na Bluefit, cultivamos um ambiente inclusivo, onde todos são bem-vindos a embarcar na jornada do bem-estar.</div></div></div></div><div role="listitem" class="swiper-slide is-slider-vantagens w-dyn-item"><div class="slider-vantagens_link"><div class="slider-vantagens_img-height"><img loading="lazy" alt="Ambientes modernos e funcionais" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/658ba0268e2be91d78401fb7_ambientesModernos.webp" class="slider-vantagens_img"/></div><div class="slider-vantagens_text-wrap"><div class="slider-vantagens_title">Ambientes modernos e funcionais</div><div class="slider-vantagens_desc">Treine em ambientes projetados para inspirar. Nossas instalações modernas e funcionais proporcionam o cenário perfeito para alcançar seus objetivos fitness!</div></div></div></div><div role="listitem" class="swiper-slide is-slider-vantagens w-dyn-item"><div class="slider-vantagens_link"><div class="slider-vantagens_img-height"><img loading="lazy" alt="Instrutores especializados" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/68126dfb7304dffb61d9e011_BLUEFIT-8716x930.webp" class="slider-vantagens_img"/></div><div class="slider-vantagens_text-wrap"><div class="slider-vantagens_title">Instrutores especializados</div><div class="slider-vantagens_desc">Conte com nossa equipe de instrutores especializados, prontos para orientar e motivar você em cada sessão. Na Bluefit, a excelência no treino é nossa prioridade.</div></div></div></div><div role="listitem" class="swiper-slide is-slider-vantagens w-dyn-item"><div class="slider-vantagens_link"><div class="slider-vantagens_img-height"><img loading="lazy" alt="Variedade de modalidades" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/68126a0191a8b9e019ea8170_BLUEFIT-3716x930.webp" class="slider-vantagens_img"/></div><div class="slider-vantagens_text-wrap"><div class="slider-vantagens_title">Variedade de modalidades</div><div class="slider-vantagens_desc">Diversifique seus treinos com uma ampla gama de modalidades, desde aulas animadas de Zumba até intensos treinos de resistência. Na Bluefit, oferecemos opções para todos os gostos e objetivos.</div></div></div></div></div></div></div><div class="slider-vantagens_styles w-embed"><style>
+
+.slider-vantagens_overflow {
+width: calc(100% + 100vw);
+}
+
+.slider-vantagens_overflow > div {
+width: calc(100% - 100vw);
+}
+
+/*hover animation*/
+
+@media screen and (min-width: 992px) {
+  .slider-vantagens_link .slider-vantagens_desc {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.5s ease-out, max-height .4s ease-out;
+  }
+
+  .slider-vantagens_link:hover .slider-vantagens_desc {
+    opacity: 1;
+    max-height: 100%;
+    transition: opacity 0.25s linear, max-height 0.4s ease-in;
+  }
+}
+</style></div></div><div class="slider-vantagens_button-wrapper"><a href="#" class="slider-vantagens_button swiper-prev w-inline-block"><div class="slider-vantagens_button-icon is-reversed w-embed"><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4379 2.39973C12.4379 2.4625 12.4703 2.52734 12.5248 2.57345L13.6476 3.52405L14.883 4.56383C15.0308 4.68825 14.9826 4.8964 14.8059 4.8964L12.0173 4.8964L2.16703 4.8964C2.07143 4.8964 2.00247 4.96275 2.00247 5.05474L2.00247 6.3089C2.00247 6.4302 2.11989 6.54301 2.24591 6.54278L12.5246 6.52388L14.6826 6.52389C14.8743 6.52389 15.004 6.76288 14.8738 6.87636L12.4897 8.95485C12.4563 8.98393 12.4379 9.02613 12.4378 9.07341L12.4376 10.4901C12.4376 10.6675 12.6702 10.7936 12.7944 10.6834L18.4047 5.70677C18.4857 5.63494 18.4678 5.49743 18.3665 5.41351L12.7565 0.764047C12.6212 0.651915 12.4379 0.709438 12.4379 0.864028L12.4379 2.39973Z" fill="#050D9E"/>
+</svg></div></a><a href="#" class="slider-vantagens_button swiper-next w-inline-block"><div class="slider-vantagens_button-icon w-embed"><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4379 2.39973C12.4379 2.4625 12.4703 2.52734 12.5248 2.57345L13.6476 3.52405L14.883 4.56383C15.0308 4.68825 14.9826 4.8964 14.8059 4.8964L12.0173 4.8964L2.16703 4.8964C2.07143 4.8964 2.00247 4.96275 2.00247 5.05474L2.00247 6.3089C2.00247 6.4302 2.11989 6.54301 2.24591 6.54278L12.5246 6.52388L14.6826 6.52389C14.8743 6.52389 15.004 6.76288 14.8738 6.87636L12.4897 8.95485C12.4563 8.98393 12.4379 9.02613 12.4378 9.07341L12.4376 10.4901C12.4376 10.6675 12.6702 10.7936 12.7944 10.6834L18.4047 5.70677C18.4857 5.63494 18.4678 5.49743 18.3665 5.41351L12.7565 0.764047C12.6212 0.651915 12.4379 0.709438 12.4379 0.864028L12.4379 2.39973Z" fill="#050D9E"/>
+</svg></div></a></div></div></div></div></div></div></section><div id="homePlanosSection" class="section_planos bg-light"><div class="padding-global"><div class="container-large"><div class="padding-section"><a href="/unidades" class="planos_banner is-mobile w-inline-block"><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/67c9ab1cc708bfea1e3e7901_card-dia-da-mulher-mobile.avif" loading="lazy" alt="Bluefit - Promoção dia da mulher" class="planos_banner-img"/></a><div class="section_title text-align-center"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><h5 id="xano_top_title_planos" class="xano_top_title_planos">Comece a treinar</h5><h3 id="xano_bottom_title" class="heading-style-h3 xano_bottom_title is-woman">hoje mesmo</h3></div></div></div></div><div class="code-embed-2 w-embed w-script"><script>
+  document.addEventListener(
+    "DOMContentLoaded",
+    async function () {
+      async function carregarDadosDaAPIPlanos() {
+        const apiUrl =
+              "https://x5ps-wz9s-zww5.b2.xano.io/api:dW0iy1K_/home";
+
+        try {
+          const response = await fetch(apiUrl);
+
+          if (!response.ok) {
+            throw new Error(
+              `Erro na chamada da API: ${response.statusText}`
+            );
+          }
+
+          const data = await response.json();
+
+          const planosContainer = document.getElementById(
+            "xano_planos-container"
+          );
+          const templateElement = document.getElementById(
+            "xano_plano-template"
+          );
+
+          const xanoPlanoDiferencialTemplate =
+                document.querySelector(
+                  ".xano_plano-diferencial-template"
+                );
+          const planoItemIconList =
+                xanoPlanoDiferencialTemplate.querySelector(
+                  ".plano_item-icon-list"
+                );
+
+          templateElement.remove();
+          
+          let divs = data.homePlanos.length;
+          
+          if (divs > 3) {
+            planosContainer.style =
+              "grid-template-columns: 1fr 1fr 1fr 1fr";
+          } else {
+            planosContainer.style =
+              "grid-template-columns: 1fr 1fr 1fr";
+          }
+
+          if (window.innerWidth < 991) {
+            planosContainer.style =
+              "grid-template-columns: 1fr";
+          }
+
+          window.addEventListener("resize", () => {
+            const larguraViewport = window.innerWidth;
+
+            if (larguraViewport < 991) {
+              planosContainer.style =
+                "grid-template-columns: 1fr";
+            } else {
+              if (divs > 3) {
+                planosContainer.style =
+                  "grid-template-columns: 1fr 1fr 1fr 1fr";
+              } else {
+                planosContainer.style =
+                  "grid-template-columns: 1fr 1fr 1fr";
+              }
+            }
+          });
+
+          data.homePlanos.forEach((planoData) => {
+            const clone = document.createElement("div");
+            clone.className = "xano_plano-template";
+            clone.innerHTML = templateElement.innerHTML;
+
+            if (planoData.flSpotlight) {
+            console.log(`${planoData.name} = true`)
+              clone.classList.add("recomendado");
+              clone.querySelector(
+                ".planos_tag-wrapper"
+              ).style.display = "flex";
+              
+             	clone.querySelector(
+              ".xano_plano-preco.destaque"
+            ).textContent = `${planoData.totalValue.toFixed(2).replace('.',',')}`;
+            
+            clone.querySelector(
+              ".xano_plano-preco.destaque"
+            ).style.display = "block";
+            
+            } else {
+            console.log(`${planoData.name} = false`)
+              clone.classList.remove("recomendado");
+              clone.querySelector(
+                ".planos_tag-wrapper"
+              ).style.display = "none";
+              
+							clone.querySelector(
+              ".xano_plano-preco.sem-destaque"
+            ).textContent = `${planoData.totalValue.toFixed(2).replace('.',',')}`;
+            
+            clone.querySelector(
+              ".xano_plano-preco.sem-destaque"
+            ).style.display = "block";
+            }
+
+            clone.querySelector(
+              ".xano_plano-nome"
+            ).textContent = planoData.name;
+            
+            const diferencialList = clone.querySelector(
+              ".xano_plano-diferencial-list"
+            );
+            diferencialList.innerHTML = "";
+            diferencialList.innerHTML = "";
+
+            planoData.differentials.forEach((diferencial) => {
+              const cloneItem = document.createElement("div");
+
+              cloneItem.classList =
+                xanoPlanoDiferencialTemplate.classList;
+              cloneItem.innerHTML =
+                xanoPlanoDiferencialTemplate.innerHTML;
+              cloneItem.querySelector(
+                ".xano_plano-diferencial"
+              ).textContent = diferencial.title;
+
+              diferencialList.appendChild(cloneItem);
+            });
+
+            planosContainer.appendChild(clone);
+          });
+        } catch (error) {
+          console.error(
+            "Ocorreu um erro durante a chamada da API:",
+            error
+          );
+        }
+      }
+
+      carregarDadosDaAPIPlanos();
+    }
+  );
+</script></div><div id="xano_planos-container" class="w-layout-grid xano_planos-container"><div id="xano_plano-template" class="xano_plano-template recomendado w-node-_278b77d5-a8eb-c768-0bfe-2b95940c09dd-219438c0"><div class="plano_item-header"><h5 class="xano_plano-nome is-unidade">Carregando...</h5><div class="plano_item-header-content is-unidade"><div class="plan-card_starts-at">A partir de:</div><div class="plano_old-price-wrap"><div class="plano_item-old-price-currency">R$</div><div class="plano_item-old-price">139,90</div></div><div class="plano_item-price-wrapper"><div class="plano_item-price-wrap"><h6 class="plan-card_main-currency">R$</h6><h3 class="xano_plano-preco destaque">...</h3><h3 class="xano_plano-preco sem-destaque">...</h3><h6 class="plan-card_main-price">/mês</h6><div class="plano_first-month">No 1º mês</div><h6 class="plan-card_disclaimer-ref">*</h6></div><div class="plan-card_tag">1° mês grátis</div></div><div class="plan-card_monthly">por mês</div><a href="/unidades" class="plano_considtions">*Consulte preços e planos de cada unidade.</a></div></div><a href="/checkout" class="button is-icon plan-card w-inline-block"><div>Conheça unidades</div></a><div id="xano_plano-diferencial-list" class="xano_plano-diferencial-list"><div id="xano_plano-diferencial-template" class="xano_plano-diferencial-template"><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/6736795cdc1c44d160a856df_plan-benefit-light-icon.svg" loading="lazy" alt="" class="plano_item-icon-list-light"/><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/67c9bb2996379479405c0c72_plan-woman-icon.svg" loading="lazy" alt="" class="plano_item-icon-list-dark"/><div class="xano_plano-diferencial">Carregando...</div></div><div class="plano_item-bg-destaque hide"></div></div><div class="planos_tag-wrapper"><div class="planos_tag-recomendado is-woman"><div class="tag-recomendado_text">Recomendado</div></div></div><div class="plano_disclaimer-content"><a href="https://storage.googleapis.com/x5ps-wz9s-zww5.b2.xano.io/vault/tVv3ARfJ/Apu1TYNNsxf7uyyrsBMty9hlG4M/8hwFSg../termo-legal-blue.pdf" target="_blank" class="plano_disclaimer">*Acesse as condições da promoção clicando aqui.</a></div><div class="plan-card_embed w-embed w-script"><style>
+.textMonthDescription {
+	display: none !important;
+}
+
+.xano_plano-template:nth-child(1) .plan-card_starts-at{
+    display: block !important;
+}
+
+.xano_plano-template:nth-child(1) .plano_considtions{
+    display: block !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: none"]) .plano_disclaimer {
+    display: none;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: none"]) .plan-card_disclaimer-ref {
+    display: none;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .plan-card_monthly {
+    color: #eb4085 !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: none"]) .plan-card_tag {
+    display: none !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .plano_old-price-wrap {
+    display: flex !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .xano_plano-preco.destaque {
+    color: #eb4085 !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .plan-card_disclaimer-ref {
+    color: #050D9E !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .plan-card_main-currency {
+    color: #eb4085 !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .xano_plano-nome {
+    color: #eb4085 !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .plan-card{
+    background: #eb4085 !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .plano_first-month{
+    display: flex !important;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .plan-card_monthly{
+    display: none !important;
+}
+</style>
+
+<style>
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"])	{
+		border: 2px solid #EB4085 !important;
+		/*background: linear-gradient(180deg, #0078FF -5.24%, #0263D0 136.24%) !important;*/
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .plano_item-icon-list-light	{
+		display: none;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: none"]) .plano_item-icon-list-dark	{
+		display: none;
+}
+
+.xano_plano-template:has(.planos_tag-wrapper[style*="display: flex"]) .xano_plano-diferencial	{
+		color: #eb4085 !important;
+}
+
+.text-style-strikethrough.heading-style-h6.promotionalvaluecompletedescription{
+	display: none !important;
+  position: absolute; 
+  top:0px;
+  opacity: 0;
+  pointer-events: none;
+}
+</style>
+
+<script>
+// Função para inserir <br> após as palavras "PLANO" ou "RECORRÊNCIA"
+function inserirQuebraDeLinha() {
+   // Seleciona todos os elementos com a classe "xano_plano-nome"
+   const elementos = document.querySelectorAll('.xano_plano-nome');
+
+   // Regex para buscar as palavras "PLANO" ou "RECORRÊNCIA" de forma isolada
+   const regexPlano = /\bPLANO\b/g; // Apenas PLANO
+   const regexPlanoOuRecorrencia = /\b(PLANO|RECORRÊNCIA)\b/g; // PLANO ou RECORRÊNCIA
+
+   // Percorre todos os elementos encontrados
+   elementos.forEach((elemento, index) => {
+      let textoModificado = elemento.innerHTML;
+
+         // Para o primeiro elemento, substitui "PLANO" por "PLANO<br>" apenas
+         textoModificado = textoModificado.replace(regexPlano, 'PLANO<br>');
+
+      // Atualiza o conteúdo do elemento com o novo HTML
+      elemento.innerHTML = textoModificado;
+   });
+}
+
+// Chama a função após um tempo especificado com setTimeout (exemplo: 2 segundos)
+if (window.innerWidth > 991) {
+    setTimeout(function() {
+        inserirQuebraDeLinha();
+    }, 1700);
+}
+
+</script></div></div></div><a href="/unidades" class="planos_banner is-desktop w-inline-block"><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/67c9b44349af7443a28a9d06_card-dia-da-mulher-desktop.avif" loading="lazy" sizes="(max-width: 1600px) 100vw, 1600px" srcset="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/67c9b44349af7443a28a9d06_card-dia-da-mulher-desktop-p-500.avif 500w, https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/67c9b44349af7443a28a9d06_card-dia-da-mulher-desktop-p-800.avif 800w, https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/67c9b44349af7443a28a9d06_card-dia-da-mulher-desktop.avif 1600w" alt="Bluefit - Promoção dia da mulher" class="planos_banner-img"/></a><div class="planos_text-bottom"><div class="text-size-tiny text-align-center">O preço da mensalidade não inclui taxas de matrícula e manutenção. Pagamento mensal por cartão de crédito. O preço mínimo pode variar entre os planos e as unidades. Consulte a relação de unidades em www.bluefit.com.br. Sujeito a alterações sem aviso prévio. Não aceitamos cheques. As Taxas de Manutenção e matrícula aparecerão no seu cartão de crédito somadas e com o nome &quot;Taxa de Adesão&quot;.</div></div></div></div></div><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/67c9ab1b1c494d33b7b0cf14_elipse-dia-da-mulher-1.svg" loading="lazy" alt="" class="bg-section_planos is-left"/><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/67c9ab1ba08551652e2a6ed4_elipse-dia-da-mulher-2.svg" loading="lazy" alt="" class="bg-section_planos is-right"/></div><section id="homeProgramasSection" class="section_programas is-home"><div class="padding-global"><div class="container-large"><div class="section_title"><div class="heading-style-h5">Confira nossos</div><h2 homeVantagensDesc="bottomTitle" class="heading-style-h3">Programas</h2></div><div class="padding-bottom padding-small"></div></div></div><div class="slider-programas_component"><div class="swiper is-slider-programas w-dyn-list"><div role="list" class="swiper-wrapper is-slider-programas w-dyn-items"><div role="listitem" class="swiper-slide is-slider-programas w-dyn-item"><a data-w-id="78d38eac-2bcb-f7b2-9eb1-2f417b53a237" href="/programas/corrida-e-movimento" class="slider-programas_link w-inline-block"><div class="slider-programas_img-height"><img alt="" loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/682b800e1b936e2c350d822c_BLUEFIT1.webp" class="slider-programas_img"/></div><div class="slider-programas_text-wrap"><div data-w-id="e8c3eefc-c7b4-29bd-813e-2ac6806db843" class="slider-programas_title">Corrida e Movimento</div><div data-w-id="6be36ebb-e4ef-5e5e-65fd-1d2169eb9302" class="slider-programas_desc">Exercícios de velocidade para você cuidar do coração, fortalecer os ossos, os músculos e perder peso.</div><div data-w-id="535f03e0-437c-0a4a-7886-81bac613dea8" class="slider-programas_button"><div>Saiba mais</div></div></div></a></div><div role="listitem" class="swiper-slide is-slider-programas w-dyn-item"><a data-w-id="78d38eac-2bcb-f7b2-9eb1-2f417b53a237" href="/programas/flex-e-relax" class="slider-programas_link w-inline-block"><div class="slider-programas_img-height"><img alt="" loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/682b7ff72077b990595e438f_BLUEFIT-311.webp" class="slider-programas_img"/></div><div class="slider-programas_text-wrap"><div data-w-id="e8c3eefc-c7b4-29bd-813e-2ac6806db843" class="slider-programas_title">Flex e Relax</div><div data-w-id="6be36ebb-e4ef-5e5e-65fd-1d2169eb9302" class="slider-programas_desc">Exercícios de flexibilidade corporal e mental para você trabalhar sua postura e equilíbrio.</div><div data-w-id="535f03e0-437c-0a4a-7886-81bac613dea8" class="slider-programas_button"><div>Saiba mais</div></div></div></a></div><div role="listitem" class="swiper-slide is-slider-programas w-dyn-item"><a data-w-id="78d38eac-2bcb-f7b2-9eb1-2f417b53a237" href="/programas/foco-e-cardio" class="slider-programas_link w-inline-block"><div class="slider-programas_img-height"><img alt="" loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/682b805bf6a4f1936ecbd0d9_BLUEFIT-2.webp" class="slider-programas_img"/></div><div class="slider-programas_text-wrap"><div data-w-id="e8c3eefc-c7b4-29bd-813e-2ac6806db843" class="slider-programas_title">Foco e cardio</div><div data-w-id="6be36ebb-e4ef-5e5e-65fd-1d2169eb9302" class="slider-programas_desc">Exercícios de resistência muscular localizados para sua hipertrofia e emagrecimento.</div><div data-w-id="535f03e0-437c-0a4a-7886-81bac613dea8" class="slider-programas_button"><div>Saiba mais</div></div></div></a></div><div role="listitem" class="swiper-slide is-slider-programas w-dyn-item"><a data-w-id="78d38eac-2bcb-f7b2-9eb1-2f417b53a237" href="/programas/foco-e-forca" class="slider-programas_link w-inline-block"><div class="slider-programas_img-height"><img alt="" loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/682b8023c04d8277cff60e67_BLUEFIT-51.webp" class="slider-programas_img"/></div><div class="slider-programas_text-wrap"><div data-w-id="e8c3eefc-c7b4-29bd-813e-2ac6806db843" class="slider-programas_title">Foco e força</div><div data-w-id="6be36ebb-e4ef-5e5e-65fd-1d2169eb9302" class="slider-programas_desc">Exercícios aeróbicos para você melhorar seu físico e queimar calorias movimentando o corpo todo.</div><div data-w-id="535f03e0-437c-0a4a-7886-81bac613dea8" class="slider-programas_button"><div>Saiba mais</div></div></div></a></div></div></div><div class="slider-programas_button-wrapper"><a href="#" class="slider-programas_arrow swiper-prev w-inline-block"><div class="slider_icon is-reversed w-embed"><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4379 2.39973C12.4379 2.4625 12.4703 2.52734 12.5248 2.57345L13.6476 3.52405L14.883 4.56383C15.0308 4.68825 14.9826 4.8964 14.8059 4.8964L12.0173 4.8964L2.16703 4.8964C2.07143 4.8964 2.00247 4.96275 2.00247 5.05474L2.00247 6.3089C2.00247 6.4302 2.11989 6.54301 2.24591 6.54278L12.5246 6.52388L14.6826 6.52389C14.8743 6.52389 15.004 6.76288 14.8738 6.87636L12.4897 8.95485C12.4563 8.98393 12.4379 9.02613 12.4378 9.07341L12.4376 10.4901C12.4376 10.6675 12.6702 10.7936 12.7944 10.6834L18.4047 5.70677C18.4857 5.63494 18.4678 5.49743 18.3665 5.41351L12.7565 0.764047C12.6212 0.651915 12.4379 0.709438 12.4379 0.864028L12.4379 2.39973Z" fill="white"/>
+</svg></div></a></div><div class="slider-programas_button-wrapper next"><a href="#" class="slider-programas_arrow swiper-next w-inline-block"><div class="slider_icon w-embed"><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4379 2.39973C12.4379 2.4625 12.4703 2.52734 12.5248 2.57345L13.6476 3.52405L14.883 4.56383C15.0308 4.68825 14.9826 4.8964 14.8059 4.8964L12.0173 4.8964L2.16703 4.8964C2.07143 4.8964 2.00247 4.96275 2.00247 5.05474L2.00247 6.3089C2.00247 6.4302 2.11989 6.54301 2.24591 6.54278L12.5246 6.52388L14.6826 6.52389C14.8743 6.52389 15.004 6.76288 14.8738 6.87636L12.4897 8.95485C12.4563 8.98393 12.4379 9.02613 12.4378 9.07341L12.4376 10.4901C12.4376 10.6675 12.6702 10.7936 12.7944 10.6834L18.4047 5.70677C18.4857 5.63494 18.4678 5.49743 18.3665 5.41351L12.7565 0.764047C12.6212 0.651915 12.4379 0.709438 12.4379 0.864028L12.4379 2.39973Z" fill="white"/>
+</svg></div></a></div></div><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/650887914d0fde0777981071_ellipse-blufit.png" loading="lazy" alt="" class="bg-asset"/></section><section id="homeUnidadesSection" class="section_unidades"><div class="padding-global"><div class="container-large"><div class="padding-section"><div class="section_title"><h5>uma Bluefit</h5><h3 homeVantagensDesc="bottomTitle" class="heading-style-h3">perto de você</h3><div class="unidades_search"><div class="unidades_input-wrapper"><div class="w-form"><form id="email-form" name="email-form" data-name="Email Form" method="get" class="unidades_inputs-flex" data-wf-page-id="64dbdfb6c42ae706219438c0" data-wf-element-id="360010dd-1918-0052-9dcc-bcdd805d77fb"><select id="unidades-estados-slide" name="unidades-estados-slide" data-name="unidades-estados-slide" class="unidades_input w-select"></select><select id="unidades-cidades-slide" name="unidades-cidades-slide" data-name="unidades-cidades-slide" class="unidades_input w-select"><option value="">Cidade</option></select></form><div class="hide-this w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="hide-this w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div><a href="/unidades" class="button is-icon hide-mobile w-inline-block"><div>Ver todas as unidades</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div></div><div class="padding-bottom padding-large"></div><div class="slicer-unidade-perto_component"><div class="swiper is-slider-unidade-perto w-dyn-list"><div role="list" class="swiper-wrapper is-slider-unidade-perto w-dyn-items"><div role="listitem" class="swiper-slide is-slider-unidade-perto w-dyn-item"><a href="#" class="slide-item_content rounded w-inline-block"><div class="slide-item_image-wrapper rounded"><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/64de5adc720ac19d37c41733_section-slider_rounded-1.webp" loading="lazy" sizes="(max-width: 736px) 100vw, 736px" srcset="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/64de5adc720ac19d37c41733_section-slider_rounded-1-p-500.webp 500w, https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/64de5adc720ac19d37c41733_section-slider_rounded-1.webp 736w" alt="" class="image-cover"/></div><div class="heading-style-h5 text-color_blue-700">Champagnat</div><div class="slide-item_description rounded">R. Padre Anchieta, 2418 Bigorrilho, Curitiba - PR | CEP: 80730-001</div></a></div></div></div><div class="slider-unidade-perto_button-wrapper"><a id="is-perto-prev" href="#" class="slider_arrow-blue swiper-prev w-inline-block"><div class="slider_icon is-reversed w-embed"><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4379 2.39973C12.4379 2.4625 12.4703 2.52734 12.5248 2.57345L13.6476 3.52405L14.883 4.56383C15.0308 4.68825 14.9826 4.8964 14.8059 4.8964L12.0173 4.8964L2.16703 4.8964C2.07143 4.8964 2.00247 4.96275 2.00247 5.05474L2.00247 6.3089C2.00247 6.4302 2.11989 6.54301 2.24591 6.54278L12.5246 6.52388L14.6826 6.52389C14.8743 6.52389 15.004 6.76288 14.8738 6.87636L12.4897 8.95485C12.4563 8.98393 12.4379 9.02613 12.4378 9.07341L12.4376 10.4901C12.4376 10.6675 12.6702 10.7936 12.7944 10.6834L18.4047 5.70677C18.4857 5.63494 18.4678 5.49743 18.3665 5.41351L12.7565 0.764047C12.6212 0.651915 12.4379 0.709438 12.4379 0.864028L12.4379 2.39973Z" fill="#050D9E"/>
+</svg></div></a></div><div class="slider-unidade-perto_button-wrapper next"><a id="is-perto-next" href="#" class="slider_arrow-blue swiper-next w-inline-block"><div class="slider_icon w-embed"><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4379 2.39973C12.4379 2.4625 12.4703 2.52734 12.5248 2.57345L13.6476 3.52405L14.883 4.56383C15.0308 4.68825 14.9826 4.8964 14.8059 4.8964L12.0173 4.8964L2.16703 4.8964C2.07143 4.8964 2.00247 4.96275 2.00247 5.05474L2.00247 6.3089C2.00247 6.4302 2.11989 6.54301 2.24591 6.54278L12.5246 6.52388L14.6826 6.52389C14.8743 6.52389 15.004 6.76288 14.8738 6.87636L12.4897 8.95485C12.4563 8.98393 12.4379 9.02613 12.4378 9.07341L12.4376 10.4901C12.4376 10.6675 12.6702 10.7936 12.7944 10.6834L18.4047 5.70677C18.4857 5.63494 18.4678 5.49743 18.3665 5.41351L12.7565 0.764047C12.6212 0.651915 12.4379 0.709438 12.4379 0.864028L12.4379 2.39973Z" fill="#050D9E"/>
+</svg></div></a></div></div></div><div class="w-embed w-script"><script>
+  const estadosSelectSlide = document.querySelector(
+    'select[name="unidades-estados-slide"]'
+  );
+  const cidadesSelectSlide = document.querySelector(
+    'select[name="unidades-cidades-slide"]'
+  );
+
+  async function popularSelectEstadosDirect(
+  select,
+   defaultName = "Estados"
+  ) {
+    const optionDefault = document.createElement("option");
+    optionDefault.value = "";
+    optionDefault.textContent = defaultName;
+    select.appendChild(optionDefault);
+
+    const apiUrl =
+          "https://x5ps-wz9s-zww5.b2.xano.io/api:lxad-sJ3/unidades/estados";
+
+    try {
+      const response = await fetch(apiUrl);
+
+      if (!response.ok) {
+        throw new Error(
+          `Erro na chamada da API: ${response.statusText}`
+        );
+      }
+
+      const data = await response.json();
+
+      data.forEach((item) => {
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.nome;
+
+        select.appendChild(option);
+      });
+    } catch (error) {
+      console.error(
+        "Ocorreu um erro durante a chamada da API:",
+        error
+      );
+    }
+  }
+
+  async function popularSelectCidades(id, select) {
+    if (id === undefined || id === null || id === "") {
+      return null;
+    }
+
+    const apiUrl = `https://x5ps-wz9s-zww5.b2.xano.io/api:lxad-sJ3/unidades/cidades?estado_id=${id}`;
+
+    try {
+      const response = await fetch(apiUrl);
+
+      if (!response.ok) {
+        throw new Error(
+          `Erro na chamada da API: ${response.statusText}`
+        );
+      }
+
+      const data = await response.json();
+
+      data.forEach((item) => {
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.nome;
+
+        select.appendChild(option);
+      });
+    } catch (error) {
+      console.error(
+        "Ocorreu um erro durante a chamada da API:",
+        error
+      );
+    }
+  }
+
+  function clearSelect(select, title) {
+    while (select.firstChild) {
+      select.removeChild(select.firstChild);
+    }
+
+    const optionDefault = document.createElement("option");
+    optionDefault.value = "";
+    optionDefault.textContent = title;
+    select.appendChild(optionDefault);
+  }
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    async function () {
+
+      popularSelectEstadosDirect(estadosSelectSlide)
+      const swiper = new Swiper(
+        ".swiper.is-slider-unidade-perto",
+        {
+          autoplay: {
+            delay: 5000,
+          },
+          spaceBetween: 20,
+          slidesPerView: 1,
+          centerInsufficientSlides: true,
+          navigation: {
+            nextEl: "#is-perto-next",
+            prevEl: "#is-perto-prev",
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            1000: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          },
+        }
+      );
+
+      async function listagemUnidadesSlides(
+      reset = false,
+       estadoId = "",
+       cidadeId = "",
+       aulaId = "",
+       slide,
+       page = 1
+      ) {
+const container = document.querySelector(
+".swiper-wrapper.is-slider-unidade-perto"
+);
+const sample = document.querySelector(
+".swiper-slide.is-slider-unidade-perto"
+);
+const clean = sample.cloneNode();
+clean.innerHTML = sample.innerHTML;
+
+sample.remove();
+
+try {
+const geoIp = await fetch(
+  "https://get.geojs.io/v1/ip/geo.js"
+);
+  const dataGeoIp = await geoIp.text();
+  const jsonString = dataGeoIp.substring(
+    6,
+    dataGeoIp.length - 2
+  );
+  const geoData = JSON.parse(jsonString);
+
+  const latitude = geoData?.latitude;
+  const longitude = geoData?.longitude;
+
+  const apiUrl = `https://x5ps-wz9s-zww5.b2.xano.io/api:DYXo6VdR/unidades?userLat=${
+  latitude ?? ""
+  }&userLng=${
+    longitude ?? ""
+  }&estado_id=${estadoId}&cidade_id=${cidadeId}&aula_id=${aulaId}&page=${page}`;
+
+const response = await fetch(apiUrl);
+
+if (!response.ok) {
+throw new Error(
+`Erro na chamada da API: ${response.statusText}`
+);
+}
+
+const data = await response.json();
+
+if (reset) {
+while (container.firstChild) {
+container.removeChild(container.firstChild);
+}
+}
+
+data.unidades.forEach((item) => {
+const clone = document.createElement("div");
+clone.classList =
+"swiper-slide is-slider-unidade-perto";
+clone.innerHTML = clean.innerHTML;
+
+clone.querySelector("a.slide-item_content").href = item.verMais;
+clone.querySelector(".slide-item_image-wrapper > img").src = item.imagens.url;
+clone.querySelector(".slide-item_image-wrapper > img").removeAttribute("srcset");
+clone.querySelector(
+".slide-item_content > div.heading-style-h5"
+).textContent = item.nome;
+
+clone.querySelector(
+"div.slide-item_description"
+).innerHTML = `${item.endereco.rua}, ${item.endereco.numero} - ${item.endereco.bairro} <br> ${item.endereco.cidade.nome}/${item.endereco.cidade.estado.nome}`;
+
+          container.appendChild(clone);
+
+          slide.update();
+        });
+      } catch (error) {
+        console.error(
+          "Ocorreu um erro durante a chamada da API:",
+          error
+        );
+      }
+    }
+
+    listagemUnidadesSlides(false, "", "", "", swiper);
+
+  estadosSelectSlide.addEventListener("change", (e) => {
+    clearSelect(cidadesSelectSlide, "Cidades");
+
+    popularSelectCidades(e.target.value, cidadesSelectSlide);
+    listagemUnidadesSlides(true, estadosSelectSlide.value, "", "", swiper);
+  });
+
+  cidadesSelectSlide.addEventListener("change", (e) => {
+    listagemUnidadesSlides(true, estadosSelectSlide.value, cidadesSelectSlide.value, "", swiper);
+  });
+  }
+  );
+</script></div></div></div></section><section id="homeAmbientesSection" class="section_ambiente home"><div class="slider-ambientes_component"><div class="swiper is-slider-ambientes w-dyn-list"><div role="list" class="swiper-wrapper is-slider-ambientes w-dyn-items"><div role="listitem" class="swiper-slide is-slider-ambientes w-dyn-item"><div class="slider-ambientes_img-height"><img alt="" loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/683dac89fbdd56adbc8627af_ESTRUTURACAMPOGRANDECENTROpadrao.webp" class="slider-ambientes_img"/></div><div class="slider-ambientes_text-wrapper"><div class="slider-ambientes_text">Academia</div></div></div><div role="listitem" class="swiper-slide is-slider-ambientes w-dyn-item"><div class="slider-ambientes_img-height"><img alt="" loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/683da6dfd17e47178a921bb6_DSC01466.webp" class="slider-ambientes_img"/></div><div class="slider-ambientes_text-wrapper"><div class="slider-ambientes_text">Arena fitness</div></div></div><div role="listitem" class="swiper-slide is-slider-ambientes w-dyn-item"><div class="slider-ambientes_img-height"><img alt="" loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/683dac778397f08d4df11721_ANDR9532.webp" class="slider-ambientes_img"/></div><div class="slider-ambientes_text-wrapper"><div class="slider-ambientes_text">Arena Bike</div></div></div></div></div><div class="slider-ambientes_card"><div class="slider-ambientes_card-content-wrap"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="collection-item w-dyn-item"><div class="slider_ambientes_card-title"><h5>Ambientes modernos</h5><h3 class="heading-style-h3">e funcionais</h3></div><div>Para você ficar no Blue!
+Ambientes completos e incríveis para todos os tipos de modalidades.</div><div class="slider_ambientes_card-button-wrap"><a href="https://bluefit.com.br/checkout" class="button is-icon btn-ambientes w-inline-block"><div>Matricule-se Já</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a><a href="/nosso-espaco" class="button is-icon secondary btn-ambientes w-inline-block"><div>Veja mais sobre nossos espaços</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div></div></div></div></div></div><div class="slider-ambientes_button-wrapper"><a href="#" class="slider-ambientes_arrow swiper-prev w-inline-block"><div class="slider_icon is-reversed w-embed"><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4379 2.39973C12.4379 2.4625 12.4703 2.52734 12.5248 2.57345L13.6476 3.52405L14.883 4.56383C15.0308 4.68825 14.9826 4.8964 14.8059 4.8964L12.0173 4.8964L2.16703 4.8964C2.07143 4.8964 2.00247 4.96275 2.00247 5.05474L2.00247 6.3089C2.00247 6.4302 2.11989 6.54301 2.24591 6.54278L12.5246 6.52388L14.6826 6.52389C14.8743 6.52389 15.004 6.76288 14.8738 6.87636L12.4897 8.95485C12.4563 8.98393 12.4379 9.02613 12.4378 9.07341L12.4376 10.4901C12.4376 10.6675 12.6702 10.7936 12.7944 10.6834L18.4047 5.70677C18.4857 5.63494 18.4678 5.49743 18.3665 5.41351L12.7565 0.764047C12.6212 0.651915 12.4379 0.709438 12.4379 0.864028L12.4379 2.39973Z" fill="white"/>
+</svg></div></a><a href="#" class="slider-ambientes_arrow swiper-next w-inline-block"><div class="slider_icon w-embed"><svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4379 2.39973C12.4379 2.4625 12.4703 2.52734 12.5248 2.57345L13.6476 3.52405L14.883 4.56383C15.0308 4.68825 14.9826 4.8964 14.8059 4.8964L12.0173 4.8964L2.16703 4.8964C2.07143 4.8964 2.00247 4.96275 2.00247 5.05474L2.00247 6.3089C2.00247 6.4302 2.11989 6.54301 2.24591 6.54278L12.5246 6.52388L14.6826 6.52389C14.8743 6.52389 15.004 6.76288 14.8738 6.87636L12.4897 8.95485C12.4563 8.98393 12.4379 9.02613 12.4378 9.07341L12.4376 10.4901C12.4376 10.6675 12.6702 10.7936 12.7944 10.6834L18.4047 5.70677C18.4857 5.63494 18.4678 5.49743 18.3665 5.41351L12.7565 0.764047C12.6212 0.651915 12.4379 0.709438 12.4379 0.864028L12.4379 2.39973Z" fill="white"/>
+</svg></div></a></div></div></section><section id="homeCadastroClienteSection" class="section_cta-matricula bg-light"><div class="padding-section"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-grid grid-2-col"><div id="w-node-cca0e7c1-74f9-3f47-66de-8655adca8978-219438c0" class="cta-matricula_image-wrapper"><img loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/682c705bc506b066bc0d381c_bluefit-training.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/682c705bc506b066bc0d381c_bluefit-training-p-500.jpg 500w, https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/682c705bc506b066bc0d381c_bluefit-training-p-800.jpg 800w, https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/682c705bc506b066bc0d381c_bluefit-training-p-1080.jpg 1080w, https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/682c705bc506b066bc0d381c_bluefit-training.jpg 1264w" class="image-cover is-matricula"/></div><div id="w-node-cca0e7c1-74f9-3f47-66de-8655adca897a-219438c0" class="cta-matricula_content-wrapper"><div class="section_title"><h5>Comece a Treinar</h5><h3 class="heading-style-h3">hoje mesmo</h3></div><div class="cta-matricula_form-wrapper"><div class="cta-matricula_input-wrapper"><div class="cta-matricula_form w-form"><form id="email-form" name="email-form" data-name="Email Form" method="get" class="cta-matricula_inputs-flex" data-wf-page-id="64dbdfb6c42ae706219438c0" data-wf-element-id="cca0e7c1-74f9-3f47-66de-8655adca8983"><select id="unidades-estados" name="unidades-estados" data-name="unidades-estados" class="unidades_input w-select"></select><select id="unidades-cidades-2" name="unidades-cidades" data-name="unidades-cidades" class="unidades_input w-select"><option value="">Cidades</option></select><select id="unidades-locais-2" name="unidades-locais" data-name="unidades-locais" class="unidades_input w-select"><option value="">Unidades</option></select></form><div class="hide-this w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="hide-this w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div><a id="checkout" href="#" class="button is-icon w-inline-block"><div>Matricule-se agora</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a><div class="hide w-embed w-script"><script>
+  const estadosSelect = document.querySelector(
+    'select[name="unidades-estados"]'
+  );
+  const cidadesSelect = document.querySelector(
+    'select[name="unidades-cidades"]'
+  );
+  const locaisSelect = document.querySelector('select[name="unidades-locais"]');
+  const link = document.getElementById("checkout");
+
+  document.addEventListener("DOMContentLoaded", async function () {
+    async function carregarDadosDaAPIPlanos() {
+      const apiUrl =
+        "https://x5ps-wz9s-zww5.b2.xano.io/api:lxad-sJ3/unidades/estados";
+
+      try {
+        const response = await fetch(apiUrl);
+
+        if (!response.ok) {
+          throw new Error(`Erro na chamada da API: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+
+        popularSelectEstados(data, estadosSelect);
+      } catch (error) {
+        console.error("Ocorreu um erro durante a chamada da API:", error);
+      }
+    }
+
+    carregarDadosDaAPIPlanos();
+  });
+
+  estadosSelect.addEventListener("change", (e) => {
+    clearSelect(cidadesSelect, "Cidades");
+    clearSelect(locaisSelect, "Unidades");
+
+    popularSelectCidades(e.target.value, cidadesSelect);
+  });
+
+  cidadesSelect.addEventListener("change", (e) => {
+    clearSelect(locaisSelect, "Unidades");
+
+    popularSelectLocais(e.target.value, locaisSelect);
+  });
+
+  locaisSelect.addEventListener("change", (e) => {
+    const selectedOption = locaisSelect.options[locaisSelect.selectedIndex];
+
+    link.href = selectedOption.getAttribute("data-url");
+  });
+
+  function popularSelectEstados(items, select, defaultName = "Estados") {
+    const optionDefault = document.createElement("option");
+    optionDefault.value = "";
+    optionDefault.textContent = defaultName;
+    select.appendChild(optionDefault);
+
+    items.forEach((item) => {
+      const option = document.createElement("option");
+      option.value = item.id;
+      option.textContent = item.nome;
+
+      select.appendChild(option);
+    });
+  }
+
+  async function popularSelectCidades(id, select) {
+    if (id === undefined || id === null || id === "") {
+      return null;
+    }
+
+    const apiUrl = `https://x5ps-wz9s-zww5.b2.xano.io/api:lxad-sJ3/unidades/cidades?estado_id=${id}`;
+
+    try {
+      const response = await fetch(apiUrl);
+
+      if (!response.ok) {
+        throw new Error(`Erro na chamada da API: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+
+      data.forEach((item) => {
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.nome;
+
+        select.appendChild(option);
+      });
+    } catch (error) {
+      console.error("Ocorreu um erro durante a chamada da API:", error);
+    }
+  }
+
+  async function popularSelectLocais(id, select) {
+    if (id === undefined || id === null || id === "") {
+      return null;
+    }
+
+    const latitude = document.querySelector('meta[name="latitude"]')?.content;
+    const longitude = document.querySelector('meta[name="longitude"]')?.content;
+    let query;
+
+    if (latitude && longitude) {
+      query = `&userLat=${latitude}&userLng=${longitude}`;
+    }
+
+    const apiUrl = `https://x5ps-wz9s-zww5.b2.xano.io/api:DYXo6VdR/unidades/checkout?cidade_id=${id}${
+      query ?? ""
+    }`;
+
+    try {
+      const response = await fetch(apiUrl);
+
+      if (!response.ok) {
+        throw new Error(`Erro na chamada da API: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+
+      data.forEach((item) => {
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.nome;
+        option.dataset.url = `/unidade/${item.slug}#unidadeInternaPlanosSection`;
+
+        select.appendChild(option);
+      });
+    } catch (error) {
+      console.error("Ocorreu um erro durante a chamada da API:", error);
+    }
+  }
+
+  function clearSelect(select, title) {
+    while (select.firstChild) {
+      select.removeChild(select.firstChild);
+    }
+
+    const optionDefault = document.createElement("option");
+    optionDefault.value = "";
+    optionDefault.textContent = title;
+    select.appendChild(optionDefault);
+  }
+</script></div></div></div></div></div></div></div></div></section><section id="homeCategoriasProdutosSection" class="section_produtos-cards overflow-hidden"><div class="padding-global"><div class="container-large"><div class="padding-section-small"><div class="w-layout-grid grid-4-col gap-lg"><div id="w-node-_1b01836c-7a58-6532-2835-59ab6053915e-219438c0" class="section_title"><h5>Produtos</h5><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/64dfd71b14828dbdab6c832f_logo-bluefit-title.svg" loading="lazy" alt=""/></div><div id="w-node-_59858052-e0e6-7f26-7f5d-141998d9eb20-219438c0" class="produtos-cta_wrapper"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a id="w-node-_1b01836c-7a58-6532-2835-59ab6053916f-219438c0" href="https://google.com" class="button is-icon w-inline-block"><div>Ver todos os produtos</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div></div></div></div></div><div class="padding-bottom padding-large"></div><div class="produtos-card_wrapper w-dyn-list"><div fs-cmsslider-element="list-1" role="list" class="produtos-card_list w-dyn-items"><div role="listitem" class="produtos-card_item w-dyn-item"><a href="https://google.com" class="produtos_card-item-wrapper w-inline-block"><div class="produtos_card-item-image"><img loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/68124f92cfe524e1d4939ff2_fotobluefitpadrao05.webp" alt="" class="produtos-card_img"/></div><div class="produtos_card-item-content"><div class="text-size-small text-size-mobile-12px">suplementos</div><div class="produtos_link-wrapper"><div class="produtos_card-icon-desktop w-embed"><svg width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.3536 4.35355C39.5488 4.15829 39.5488 3.84171 39.3536 3.64645L36.1716 0.464466C35.9763 0.269204 35.6597 0.269204 35.4645 0.464466C35.2692 0.659728 35.2692 0.976311 35.4645 1.17157L38.2929 4L35.4645 6.82843C35.2692 7.02369 35.2692 7.34027 35.4645 7.53553C35.6597 7.7308 35.9763 7.7308 36.1716 7.53553L39.3536 4.35355ZM0 4.5H39V3.5H0V4.5Z" fill="#181818"/>
+</svg></div><div class="produtos_card-icon-mobile w-embed"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.42304 4.35355C7.6183 4.15829 7.6183 3.84171 7.42304 3.64645L4.24106 0.464466C4.04579 0.269204 3.72921 0.269204 3.53395 0.464466C3.33869 0.659729 3.33869 0.976311 3.53395 1.17157L6.36238 4L3.53395 6.82843C3.33869 7.02369 3.33869 7.34027 3.53395 7.53553C3.72921 7.7308 4.04579 7.7308 4.24106 7.53553L7.42304 4.35355ZM0.115234 4.5L7.06948 4.5L7.06948 3.5L0.115234 3.5L0.115234 4.5Z" fill="#181818"/>
+</svg></div></div></div></a></div><div role="listitem" class="produtos-card_item w-dyn-item"><a href="https://google.com" class="produtos_card-item-wrapper w-inline-block"><div class="produtos_card-item-image"><img loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/68124f92cfe524e1d4939ff2_fotobluefitpadrao05.webp" alt="" class="produtos-card_img"/></div><div class="produtos_card-item-content"><div class="text-size-small text-size-mobile-12px">equipamentos</div><div class="produtos_link-wrapper"><div class="produtos_card-icon-desktop w-embed"><svg width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.3536 4.35355C39.5488 4.15829 39.5488 3.84171 39.3536 3.64645L36.1716 0.464466C35.9763 0.269204 35.6597 0.269204 35.4645 0.464466C35.2692 0.659728 35.2692 0.976311 35.4645 1.17157L38.2929 4L35.4645 6.82843C35.2692 7.02369 35.2692 7.34027 35.4645 7.53553C35.6597 7.7308 35.9763 7.7308 36.1716 7.53553L39.3536 4.35355ZM0 4.5H39V3.5H0V4.5Z" fill="#181818"/>
+</svg></div><div class="produtos_card-icon-mobile w-embed"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.42304 4.35355C7.6183 4.15829 7.6183 3.84171 7.42304 3.64645L4.24106 0.464466C4.04579 0.269204 3.72921 0.269204 3.53395 0.464466C3.33869 0.659729 3.33869 0.976311 3.53395 1.17157L6.36238 4L3.53395 6.82843C3.33869 7.02369 3.33869 7.34027 3.53395 7.53553C3.72921 7.7308 4.04579 7.7308 4.24106 7.53553L7.42304 4.35355ZM0.115234 4.5L7.06948 4.5L7.06948 3.5L0.115234 3.5L0.115234 4.5Z" fill="#181818"/>
+</svg></div></div></div></a></div><div role="listitem" class="produtos-card_item w-dyn-item"><a href="https://amazon.com" class="produtos_card-item-wrapper w-inline-block"><div class="produtos_card-item-image"><img loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/68124f92cfe524e1d4939ff2_fotobluefitpadrao05.webp" alt="" class="produtos-card_img"/></div><div class="produtos_card-item-content"><div class="text-size-small text-size-mobile-12px">acessórios</div><div class="produtos_link-wrapper"><div class="produtos_card-icon-desktop w-embed"><svg width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.3536 4.35355C39.5488 4.15829 39.5488 3.84171 39.3536 3.64645L36.1716 0.464466C35.9763 0.269204 35.6597 0.269204 35.4645 0.464466C35.2692 0.659728 35.2692 0.976311 35.4645 1.17157L38.2929 4L35.4645 6.82843C35.2692 7.02369 35.2692 7.34027 35.4645 7.53553C35.6597 7.7308 35.9763 7.7308 36.1716 7.53553L39.3536 4.35355ZM0 4.5H39V3.5H0V4.5Z" fill="#181818"/>
+</svg></div><div class="produtos_card-icon-mobile w-embed"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.42304 4.35355C7.6183 4.15829 7.6183 3.84171 7.42304 3.64645L4.24106 0.464466C4.04579 0.269204 3.72921 0.269204 3.53395 0.464466C3.33869 0.659729 3.33869 0.976311 3.53395 1.17157L6.36238 4L3.53395 6.82843C3.33869 7.02369 3.33869 7.34027 3.53395 7.53553C3.72921 7.7308 4.04579 7.7308 4.24106 7.53553L7.42304 4.35355ZM0.115234 4.5L7.06948 4.5L7.06948 3.5L0.115234 3.5L0.115234 4.5Z" fill="#181818"/>
+</svg></div></div></div></a></div><div role="listitem" class="produtos-card_item w-dyn-item"><a href="https://google.ciom" class="produtos_card-item-wrapper w-inline-block"><div class="produtos_card-item-image"><img loading="lazy" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/68124f92cfe524e1d4939ff2_fotobluefitpadrao05.webp" alt="" class="produtos-card_img"/></div><div class="produtos_card-item-content"><div class="text-size-small text-size-mobile-12px">vestuários</div><div class="produtos_link-wrapper"><div class="produtos_card-icon-desktop w-embed"><svg width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.3536 4.35355C39.5488 4.15829 39.5488 3.84171 39.3536 3.64645L36.1716 0.464466C35.9763 0.269204 35.6597 0.269204 35.4645 0.464466C35.2692 0.659728 35.2692 0.976311 35.4645 1.17157L38.2929 4L35.4645 6.82843C35.2692 7.02369 35.2692 7.34027 35.4645 7.53553C35.6597 7.7308 35.9763 7.7308 36.1716 7.53553L39.3536 4.35355ZM0 4.5H39V3.5H0V4.5Z" fill="#181818"/>
+</svg></div><div class="produtos_card-icon-mobile w-embed"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.42304 4.35355C7.6183 4.15829 7.6183 3.84171 7.42304 3.64645L4.24106 0.464466C4.04579 0.269204 3.72921 0.269204 3.53395 0.464466C3.33869 0.659729 3.33869 0.976311 3.53395 1.17157L6.36238 4L3.53395 6.82843C3.33869 7.02369 3.33869 7.34027 3.53395 7.53553C3.72921 7.7308 4.04579 7.7308 4.24106 7.53553L7.42304 4.35355ZM0.115234 4.5L7.06948 4.5L7.06948 3.5L0.115234 3.5L0.115234 4.5Z" fill="#181818"/>
+</svg></div></div></div></a></div></div></div><div class="produtos-cta_wrapper is-mobile"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a id="w-node-_2d78605b-4547-e334-0965-41e1bdcb4212-219438c0" href="https://google.com" class="button is-icon w-inline-block"><div>Ver todos os produtos</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div></div></div></div></div></div></div><div class="produtos_bg-light"></div></section><section id="homeBlogSection" class="section_blog-cards"><div class="padding-global"><div class="container-large"><div class="padding-section"><div class="w-layout-grid grid-4-col gap-lg"><div id="w-node-d7caa3eb-eeda-4fb9-af54-b3793a894e2f-219438c0" class="section_title"><h5>Fique por dentro</h5><h3 homeVantagensDesc="bottomTitle" class="heading-style-h3">das novidades</h3></div><div id="w-node-d7caa3eb-eeda-4fb9-af54-b3793a894e33-219438c0" class="produtos-cta_wrapper"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a id="w-node-d7caa3eb-eeda-4fb9-af54-b3793a894e37-219438c0" href="https://bluefit.com.br/blog" class="button is-icon w-inline-block"><div>Visite nosso blog</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div></div></div></div></div><div class="padding-bottom padding-large"></div><div class="blog-cards_component"><div id="w-node-_129ed315-104d-f5e2-c4cd-92c41ab1ec5d-1ab1ec5c" class="blog-cards_collection-wrapper w-dyn-list"><div role="list" class="blog-cards_collection-list is-card-big w-dyn-items"><div role="listitem" class="blog-cards_card-item main_card w-dyn-item"><a href="/blog/academia-perto-de-mim" class="blog-card_link-block w-inline-block"><div id="w-node-_129ed315-104d-f5e2-c4cd-92c41ab1ec61-1ab1ec5c" class="blog-cards_card-wrapper is-big"><div class="blog-cards_img-wrapper is-big"><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/66999028c4eb95f5968f5446_academia-perto-de-mim.webp" class="image-cover blog_destaque"/><div class="blog_cards_categoria is-card-big w-condition-invisible"><div class="text-size-tiny text-color-white w-dyn-bind-empty"></div></div></div><div class="blog-cards_content"><div class="heading-style-h6 text-color_blue-700">Academia perto de mim: como escolher a melhor?</div><div class="text-size-small blog_short_desc">👉 Você já sentiu aquela preguicinha só de pensar na distância até a academia? 😴 Separamos dicas incríveis para te ajudar a escolher a academia perfeita, pertinho da sua casa ou trabalho! 😉</div></div></div></a></div></div></div><div id="w-node-_129ed315-104d-f5e2-c4cd-92c41ab1ec6c-1ab1ec5c" class="blog-cards_collection-wrapper w-dyn-list"><div role="list" class="blog-cards_collection-list w-dyn-items"><div role="listitem" class="blog-cards_card-item w-dyn-item"><a href="/blog/treino-de-biceps" class="blog-card_link-block w-inline-block"><div class="blog-cards_card-wrapper"><div class="blog-cards_img-wrapper"><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/669985a03f3760c26dcbd9c2_treino-de-biceps.webp" class="image-cover blog_secundario"/><div style="background-color:#0a0a0a" class="blog_cards_categoria is-2"><div class="text-size-xtiny text-color-white">Treinos</div></div></div><div class="blog-cards_content"><div class="heading-style-h6 text-color_blue-700">Treino de bíceps: 5 exercícios para fazer esse músculo saltar</div><div class="text-size-small blog_short_desc">Quer sentir aquele pump nos seus bíceps? 💪 Confira 5 exercícios que vão “explodir” seus braços e dar aquele pump sinistro! 👊</div></div></div></a></div><div role="listitem" class="blog-cards_card-item w-dyn-item"><a href="/blog/barriga-tanquinho" class="blog-card_link-block w-inline-block"><div class="blog-cards_card-wrapper"><div class="blog-cards_img-wrapper"><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/64dd05b33f019f79a7ec8f43/66998a766f13de314a7b2c2b_barriga-tanquinho.webp" class="image-cover blog_secundario"/><div style="background-color:#0711cf" class="blog_cards_categoria is-2"><div class="text-size-xtiny text-color-white">Atividades físicas</div></div></div><div class="blog-cards_content"><div class="heading-style-h6 text-color_blue-700">Mitos e verdades sobre barriga tanquinho que você precisa saber</div><div class="text-size-small blog_short_desc">💪 Quer conquistar uma barriga tanquinho, mas não sabe por onde começar? O primeiro passo é saber o que é verdade e o que é mentira para não se esforçar à toa. 😉</div></div></div></a></div></div></div><div id="w-node-cda647e6-e27e-be18-2ada-bfb95a8f1f71-1ab1ec5c" class="w-embed"><style>
+/* Hide scrollbar for Chrome, Safari and Opera */
+.blog_short_desc::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.blog_short_desc {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+</style></div></div><div class="produtos-cta_wrapper is-mobile"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a id="w-node-_2ca30ecc-c0a3-a32a-f973-48055b67d392-219438c0" href="https://bluefit.com.br/blog" class="button is-icon w-inline-block"><div>Visite nosso blog</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div></div></div></div></div></div></div><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/650887914d0fde0777981071_ellipse-blufit.png" loading="lazy" alt="" class="bg-asset is-section-blog"/></section></main><footer class="footer"><div class="padding-global"><div class="container-large"><div class="footer_top-mb"><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/64e66e9676132596a04df0ff_logo-bluefit-footer.svg" loading="lazy" alt="" class="footer-logo"/><div class="footer-top-mb_btn-group"><a href="/checkout" class="button is-footer w-button">Matricule-se</a><a href="https://evo-totem.w12app.com.br/bluefit/1/site/escolher-acao/cliente" class="button_white is-icon secondary w-inline-block"><div class="footer_btn-label">Área do Aluno</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a></div></div><div class="footer_grid"><div id="w-node-_001472c4-c685-7576-5459-11886a7857dd-6a7857d0" class="footer-top_col-wrapper"><h5>Conheça</h5><div class="footer-top_link-wrapper"><a href="/sobre" class="footer-link w-inline-block"><div>Sobre nós</div></a><a href="/unidades" class="footer-link w-inline-block"><div>Unidades</div></a><a href="/nosso-espaco" class="footer-link w-inline-block"><div>Nosso Espaço</div></a><a href="/programas" class="footer-link w-inline-block"><div>Programas</div></a><a href="/aulas" class="footer-link w-inline-block"><div>Aulas</div></a></div></div><div id="w-node-_001472c4-c685-7576-5459-11886a7857f0-6a7857d0" class="footer-top_col-wrapper"><h5>Veja Também</h5><div class="footer-top_link-wrapper"><a href="/blog" class="footer-link w-inline-block"><div>Blog</div></a><a href="/eventos" class="footer-link w-inline-block"><div>Eventos</div></a><a href="/atendimento" class="footer-link w-inline-block"><div>Contato</div></a><a href="https://ri.bluefit.com.br/" class="footer-link hide-link w-inline-block"><div>Para Investidores</div></a><a href="/indique-um-imovel" class="footer-link w-inline-block"><div>Indique um imóvel</div></a></div></div><div id="w-node-_001472c4-c685-7576-5459-11886a785806-6a7857d0" class="footer-top_col-wrapper"><h5>Saiba Mais</h5><div class="footer-top_link-wrapper"><a href="/contratos" class="footer-link w-inline-block"><div>Contratos</div></a><a href="/trabalhe-conosco" class="footer-link w-inline-block"><div>Trabalhe Conosco</div></a><a href="https://www.canaldeetica.com.br/bluefit/" target="_blank" class="footer-link w-inline-block"><div>Canal de Denúncias</div></a></div></div><div id="w-node-_001472c4-c685-7576-5459-11886a785813-6a7857d0" class="footer-top_col-wrapper"><h5 class="footer_hide-mb">Entre em Contato</h5><a href="/atendimento" class="button_white is-icon secondary is-small w-inline-block"><div class="footer_btn-hide-mb">Converse com a Blue</div><div class="footer-btn_hide-desk">Converse com a Blue</div><div class="icon-1x1-small rotate w-embed"><svg aria-hidden="true" fill='currentColor' role="img" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><title>Arrow Right</title><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></div></a><div class="footer_redes-sociais hide-mb"><h5>Nos siga nas redes sociais</h5><div class="redes-sociais_brands-wrapper"><a href="https://www.linkedin.com/company/bluefit-academia/" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28.7522 25.5032H29.0359L28.4922 24.6807C28.8247 24.6807 29.0009 24.4695 29.0034 24.2107C29.0034 24.2007 29.0034 24.1895 29.0022 24.1795C29.0022 23.827 28.7897 23.6582 28.3534 23.6582H27.6484V25.5032H27.9134V24.6995H28.2397L28.7522 25.5032ZM28.2209 24.4907H27.9134V23.867H28.3034C28.5047 23.867 28.7347 23.8995 28.7347 24.1632C28.7347 24.4657 28.5022 24.4907 28.2197 24.4907" fill="white"/>
+<path d="M21.6138 22.3639H17.855V16.4777C17.855 15.0739 17.83 13.2677 15.9 13.2677C13.9425 13.2677 13.6425 14.7964 13.6425 16.3764V22.3639H9.885V10.2589H13.4937V11.9127H13.5437C14.28 10.6552 15.6475 9.90392 17.1038 9.95767C20.9137 9.95767 21.615 12.4639 21.615 15.7227L21.6138 22.3639ZM5.64375 8.60392C4.43875 8.60392 3.4625 7.62767 3.4625 6.42267C3.4625 5.21767 4.43875 4.24142 5.64375 4.24142C6.84875 4.24142 7.825 5.21767 7.825 6.42267C7.825 7.62767 6.84875 8.60392 5.64375 8.60392ZM7.5225 22.3639H3.76V10.2589H7.5225V22.3639ZM23.4875 0.751421H1.87125C0.85 0.740171 0.0125 1.55892 0 2.58017V24.2852C0.0125 25.3077 0.85 26.1264 1.87125 26.1152H23.4875C24.5113 26.1277 25.3525 25.3089 25.3662 24.2852V2.57892C25.3512 1.55517 24.51 0.736421 23.4875 0.750171" fill="white"/>
+<path d="M28.2536 22.8359C27.2986 22.8447 26.5311 23.6272 26.5411 24.5822C26.5499 25.5372 27.3324 26.3047 28.2874 26.2947C29.2424 26.2859 30.0099 25.5034 29.9999 24.5484C29.9911 23.6059 29.2286 22.8447 28.2874 22.8359H28.2536ZM28.2936 26.0959C27.4561 26.1097 26.7261 25.4434 26.7124 24.6059C26.6986 23.7684 27.3661 23.0784 28.2036 23.0647C29.0411 23.0509 29.7311 23.7184 29.7449 24.5559C29.7449 24.5647 29.7449 24.5722 29.7449 24.5809C29.7624 25.3997 29.1124 26.0784 28.2936 26.0959H28.2549H28.2936Z" fill="white"/>
+</svg></div></a><a href="https://www.instagram.com/bluefitacademia/" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.913 7.98245C26.8965 6.84746 26.6866 5.72146 26.2848 4.65993C25.5816 2.84723 24.1498 1.41387 22.3371 0.712184C21.289 0.317859 20.181 0.106453 19.0595 0.0824634C17.6172 0.0179921 17.1599 0 13.4985 0C9.83713 0 9.36784 1.00538e-07 7.93597 0.0824634C6.81597 0.106453 5.70796 0.317859 4.65993 0.712184C2.84723 1.41387 1.41387 2.84723 0.712183 4.65993C0.317859 5.70796 0.104953 6.81597 0.0839627 7.93597C0.0194913 9.37983 0 9.83713 0 13.4985C0 17.1599 -1.11709e-08 17.6277 0.0839627 19.061C0.106453 20.1825 0.317859 21.289 0.712183 22.3401C1.41537 24.1513 2.84723 25.5846 4.66143 26.2863C5.70496 26.6941 6.81297 26.925 7.93747 26.961C9.38133 27.0255 9.83863 27.045 13.5 27.045C17.1614 27.045 17.6307 27.045 19.0625 26.961C20.1825 26.9385 21.2905 26.7271 22.3401 26.3328C24.1528 25.6296 25.5846 24.1962 26.2878 22.385C26.6821 21.3355 26.8935 20.229 26.916 19.106C26.9805 17.6636 27 17.2064 27 13.5435C26.997 9.88211 26.997 9.41731 26.913 7.98245ZM13.4895 20.4224C9.66021 20.4224 6.55808 17.3203 6.55808 13.491C6.55808 9.66171 9.66021 6.55958 13.4895 6.55958C17.3158 6.55958 20.4209 9.66171 20.4209 13.491C20.4209 17.3203 17.3158 20.4224 13.4895 20.4224ZM20.6968 7.91948C19.8017 7.91948 19.0805 7.1968 19.0805 6.3032C19.0805 5.4096 19.8017 4.68692 20.6968 4.68692C21.5889 4.68692 22.3116 5.4096 22.3116 6.3032C22.3116 7.1968 21.5889 7.91948 20.6968 7.91948Z" fill="white"/>
+<path d="M13.4888 17.9933C15.9755 17.9933 17.9913 15.9774 17.9913 13.4908C17.9913 11.0041 15.9755 8.98828 13.4888 8.98828C11.0022 8.98828 8.98633 11.0041 8.98633 13.4908C8.98633 15.9774 11.0022 17.9933 13.4888 17.9933Z" fill="white"/>
+</svg></div></a><a href="https://www.facebook.com/bluefitacademia" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.93642 0.00488281C2.20186 0.00488281 0 2.20674 0 4.9413V22.1034C0 24.838 2.20186 27.0399 4.93642 27.0399H14.2381V16.4709H11.4434V12.6657H14.2381V9.41475C14.2381 6.86062 15.8894 4.5155 19.6933 4.5155C21.2334 4.5155 22.3723 4.66335 22.3723 4.66335L22.2827 8.21677C22.2827 8.21677 21.1212 8.2058 19.8538 8.2058C18.4821 8.2058 18.2621 8.83782 18.2621 9.88705V12.6657H22.3917L22.2117 16.4709H18.2621V27.0399H22.0985C24.8331 27.0399 27.0349 24.838 27.0349 22.1035V4.94133C27.0349 2.20677 24.8331 0.00490985 22.0985 0.00490985H4.93639L4.93642 0.00488281Z" fill="white"/>
+</svg></div></a><a href="https://www.tiktok.com/@bluefit" target="_blank" class="w-inline-block"><div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.995" height="26.995" viewBox="0 0 128 128">
+  <image width="128" height="128" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAwklEQVRIie3WIQoCURSF4X8mCBMFk0bBJIjBbWgUl2LVYDG7DIvZ4DIEk6hlwCAWgxy5wws2hXEuCO8s4H2cywsnkURIDZgCI6ANJJTLCdgBC+BYvGSYpIGkg6rJXdLEHGuWBblRssmn9NJwuqohy8qa7YGOA5Zbs5YDZMnSH/y6r2PY08lS6gQViVjEIhaxP8K82iXuZ7w6WQ/Dtk5YbhukCZwdsKE1uwDjiqEZsHlfxH1gDnSB+g+2yS3s0SWwBngB6tOMxgA9FXsAAAAASUVORK5CYII="/>
+  <image x="25" y="17" width="81" height="94" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAABT0lEQVQ4jaXUP0uWURjH8Y+Pj4RLUgYhQvmAW2uB5FbY2KC41JJD5CA4OtWgtLS0+AoaHFolkAgMIhx8A72CBhUXh/5IGhfcwtXh3HBjPzjc17/zvc+5zuEM9UZmddA+BuhhBVt5Sq8LAXcwjmt4XCa7Qg6TvYD+ZSBZAdj5X0joYdOnZUz3O0xo091mnFxmJT8Lf7QGmcMbbEZBJf+yOaFvjd/P27mH1w3kQuv4UUB+YbsZjzB1AZnBXuWvZ5XY1WR/lM77Q1H4G0cVQOi8DERPVnE9xTaaK34bxy2gfxQreZ4CX/Cqy8RyJYPkv2upO032lRokd3+qBXIj2Sc1yNfkv8DNouYtxpK/U+TFe3K/AEUz1/AdT/A05SI2WYPE9z0WW7aS9QC7te2EnlXuSlZcuqUaIDQ8NHwrvtH9ePLi8ZnACP7gAJ8xj09VPP4ChT8zP0TxsBQAAAAASUVORK5CYII="/>
+</svg></div></a></div></div></div><div id="w-node-_001472c4-c685-7576-5459-11886a785831-6a7857d0" class="footer_bottom"><div class="redes-sociais_brands-wrapper hide-desk"><a href="https://www.linkedin.com/company/bluefit-academia/" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28.7522 25.5032H29.0359L28.4922 24.6807C28.8247 24.6807 29.0009 24.4695 29.0034 24.2107C29.0034 24.2007 29.0034 24.1895 29.0022 24.1795C29.0022 23.827 28.7897 23.6582 28.3534 23.6582H27.6484V25.5032H27.9134V24.6995H28.2397L28.7522 25.5032ZM28.2209 24.4907H27.9134V23.867H28.3034C28.5047 23.867 28.7347 23.8995 28.7347 24.1632C28.7347 24.4657 28.5022 24.4907 28.2197 24.4907" fill="white"/>
+<path d="M21.6138 22.3639H17.855V16.4777C17.855 15.0739 17.83 13.2677 15.9 13.2677C13.9425 13.2677 13.6425 14.7964 13.6425 16.3764V22.3639H9.885V10.2589H13.4937V11.9127H13.5437C14.28 10.6552 15.6475 9.90392 17.1038 9.95767C20.9137 9.95767 21.615 12.4639 21.615 15.7227L21.6138 22.3639ZM5.64375 8.60392C4.43875 8.60392 3.4625 7.62767 3.4625 6.42267C3.4625 5.21767 4.43875 4.24142 5.64375 4.24142C6.84875 4.24142 7.825 5.21767 7.825 6.42267C7.825 7.62767 6.84875 8.60392 5.64375 8.60392ZM7.5225 22.3639H3.76V10.2589H7.5225V22.3639ZM23.4875 0.751421H1.87125C0.85 0.740171 0.0125 1.55892 0 2.58017V24.2852C0.0125 25.3077 0.85 26.1264 1.87125 26.1152H23.4875C24.5113 26.1277 25.3525 25.3089 25.3662 24.2852V2.57892C25.3512 1.55517 24.51 0.736421 23.4875 0.750171" fill="white"/>
+<path d="M28.2536 22.8359C27.2986 22.8447 26.5311 23.6272 26.5411 24.5822C26.5499 25.5372 27.3324 26.3047 28.2874 26.2947C29.2424 26.2859 30.0099 25.5034 29.9999 24.5484C29.9911 23.6059 29.2286 22.8447 28.2874 22.8359H28.2536ZM28.2936 26.0959C27.4561 26.1097 26.7261 25.4434 26.7124 24.6059C26.6986 23.7684 27.3661 23.0784 28.2036 23.0647C29.0411 23.0509 29.7311 23.7184 29.7449 24.5559C29.7449 24.5647 29.7449 24.5722 29.7449 24.5809C29.7624 25.3997 29.1124 26.0784 28.2936 26.0959H28.2549H28.2936Z" fill="white"/>
+</svg></div></a><a href="https://www.instagram.com/bluefitacademia/" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.913 7.98245C26.8965 6.84746 26.6866 5.72146 26.2848 4.65993C25.5816 2.84723 24.1498 1.41387 22.3371 0.712184C21.289 0.317859 20.181 0.106453 19.0595 0.0824634C17.6172 0.0179921 17.1599 0 13.4985 0C9.83713 0 9.36784 1.00538e-07 7.93597 0.0824634C6.81597 0.106453 5.70796 0.317859 4.65993 0.712184C2.84723 1.41387 1.41387 2.84723 0.712183 4.65993C0.317859 5.70796 0.104953 6.81597 0.0839627 7.93597C0.0194913 9.37983 0 9.83713 0 13.4985C0 17.1599 -1.11709e-08 17.6277 0.0839627 19.061C0.106453 20.1825 0.317859 21.289 0.712183 22.3401C1.41537 24.1513 2.84723 25.5846 4.66143 26.2863C5.70496 26.6941 6.81297 26.925 7.93747 26.961C9.38133 27.0255 9.83863 27.045 13.5 27.045C17.1614 27.045 17.6307 27.045 19.0625 26.961C20.1825 26.9385 21.2905 26.7271 22.3401 26.3328C24.1528 25.6296 25.5846 24.1962 26.2878 22.385C26.6821 21.3355 26.8935 20.229 26.916 19.106C26.9805 17.6636 27 17.2064 27 13.5435C26.997 9.88211 26.997 9.41731 26.913 7.98245ZM13.4895 20.4224C9.66021 20.4224 6.55808 17.3203 6.55808 13.491C6.55808 9.66171 9.66021 6.55958 13.4895 6.55958C17.3158 6.55958 20.4209 9.66171 20.4209 13.491C20.4209 17.3203 17.3158 20.4224 13.4895 20.4224ZM20.6968 7.91948C19.8017 7.91948 19.0805 7.1968 19.0805 6.3032C19.0805 5.4096 19.8017 4.68692 20.6968 4.68692C21.5889 4.68692 22.3116 5.4096 22.3116 6.3032C22.3116 7.1968 21.5889 7.91948 20.6968 7.91948Z" fill="white"/>
+<path d="M13.4888 17.9933C15.9755 17.9933 17.9913 15.9774 17.9913 13.4908C17.9913 11.0041 15.9755 8.98828 13.4888 8.98828C11.0022 8.98828 8.98633 11.0041 8.98633 13.4908C8.98633 15.9774 11.0022 17.9933 13.4888 17.9933Z" fill="white"/>
+</svg></div></a><a href="https://www.facebook.com/bluefitacademia" target="_blank" class="w-inline-block"><div class="w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.93642 0.00488281C2.20186 0.00488281 0 2.20674 0 4.9413V22.1034C0 24.838 2.20186 27.0399 4.93642 27.0399H14.2381V16.4709H11.4434V12.6657H14.2381V9.41475C14.2381 6.86062 15.8894 4.5155 19.6933 4.5155C21.2334 4.5155 22.3723 4.66335 22.3723 4.66335L22.2827 8.21677C22.2827 8.21677 21.1212 8.2058 19.8538 8.2058C18.4821 8.2058 18.2621 8.83782 18.2621 9.88705V12.6657H22.3917L22.2117 16.4709H18.2621V27.0399H22.0985C24.8331 27.0399 27.0349 24.838 27.0349 22.1035V4.94133C27.0349 2.20677 24.8331 0.00490985 22.0985 0.00490985H4.93639L4.93642 0.00488281Z" fill="white"/>
+</svg></div></a><a href="https://www.tiktok.com/@bluefit" target="_blank" class="w-inline-block"><div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.995" height="26.995" viewBox="0 0 128 128">
+  <image width="128" height="128" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAwklEQVRIie3WIQoCURSF4X8mCBMFk0bBJIjBbWgUl2LVYDG7DIvZ4DIEk6hlwCAWgxy5wws2hXEuCO8s4H2cywsnkURIDZgCI6ANJJTLCdgBC+BYvGSYpIGkg6rJXdLEHGuWBblRssmn9NJwuqohy8qa7YGOA5Zbs5YDZMnSH/y6r2PY08lS6gQViVjEIhaxP8K82iXuZ7w6WQ/Dtk5YbhukCZwdsKE1uwDjiqEZsHlfxH1gDnSB+g+2yS3s0SWwBngB6tOMxgA9FXsAAAAASUVORK5CYII="/>
+  <image x="25" y="17" width="81" height="94" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAABT0lEQVQ4jaXUP0uWURjH8Y+Pj4RLUgYhQvmAW2uB5FbY2KC41JJD5CA4OtWgtLS0+AoaHFolkAgMIhx8A72CBhUXh/5IGhfcwtXh3HBjPzjc17/zvc+5zuEM9UZmddA+BuhhBVt5Sq8LAXcwjmt4XCa7Qg6TvYD+ZSBZAdj5X0joYdOnZUz3O0xo091mnFxmJT8Lf7QGmcMbbEZBJf+yOaFvjd/P27mH1w3kQuv4UUB+YbsZjzB1AZnBXuWvZ5XY1WR/lM77Q1H4G0cVQOi8DERPVnE9xTaaK34bxy2gfxQreZ4CX/Cqy8RyJYPkv2upO032lRokd3+qBXIj2Sc1yNfkv8DNouYtxpK/U+TFe3K/AEUz1/AdT/A05SI2WYPE9z0WW7aS9QC7te2EnlXuSlZcuqUaIDQ8NHwrvtH9ePLi8ZnACP7gAJ8xj09VPP4ChT8zP0TxsBQAAAAASUVORK5CYII="/>
+</svg></div></a></div><div class="footer-bottom_ilinks-legal"><a href="/contratos" class="footer-link w-inline-block"><div>Termos de uso</div></a><img src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/64e66e9676132596a04df0ff_logo-bluefit-footer.svg" loading="lazy" alt="" class="footer-logo hide-mb"/><div class="separador-v hide-desk"></div><a href="/contratos" class="footer-link w-inline-block"><div>Políticas de privacidade</div></a></div><div class="footer-bottom_separador hide-mb"></div><div class="text-size-tiny">© 2024   Desenvolvido com amor e café por Notis/us</div></div></div></div></div></footer></div><div class="w-embed w-iframe"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe crossorigin="anonymous" src="https://www.googletagmanager.com/ns.html?id=GTM-NFPBVHQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></div><div fs-consent-styledCategories="false" fs-consent-element="internal-component" class="fs-consent_component"><div fs-consent-element="banner" class="fs-consent_banner"><div class="fs-consent_banner_wrapper"><p class="fs-consent_banner_paragraph">Ao clicar em &quot;Aceitar&quot;, você concorda em armazenar cookies no seu dispositivo para melhorar a navegação do site, análises de uso e marketing.</p><div fs-consent-element="internal-buttons-wrapper" class="fs-consent_banner_buttons"><a fs-consent-element="open-preferences" href="#" class="fs-consent_prefs_link">Preferências</a><a fs-consent-element="deny" href="#" class="fs-consent_decline w-button">Rejeitar</a><a fs-consent-element="allow" href="#" class="fs-consent_allow w-button">Aceitar</a></div></div></div><div fs-consent-easing="ease" fs-consent-element="preferences" fs-consent-animation="slide-up" fs-consent-duration="300" class="fs-consent_prefs"><div class="fs-consent_prefs_wrapper"><div class="fs-consent_prefs_form-block w-form"><form id="email-form" name="email-form" data-name="Email Form" method="get" fs-consent-element="form" class="fs-consent_prefs_form" data-wf-page-id="64dbdfb6c42ae706219438c0" data-wf-element-id="d29ae071-aeff-5283-a154-12673353fc5b"><div class="fs-consent_prefs_popup"><div class="fs-consent_prefs_header"><div class="fs-consent_prefs_heading"><strong>Gerencie suas preferências por categoria</strong></div></div><div fs-consent-element="internal-categories-wrapper" class="fs-consent_prefs_list"><div fs-consent-element="internal-category-essential" class="fs-consent_prefs_option"><div class="fs-consent_checkbox_field"><div class="fs-consent_checkbox_label">Essêncial</div><div><strong>Sempre ativo</strong></div></div><p class="fs-consent_prefs_description">Necessário para o funcionamento do site.<br/></p></div><div fs-consent-element="internal-category-marketing" class="fs-consent_prefs_option"><label class="w-checkbox fs-consent_checkbox_field-2"><input type="checkbox" name="marketing" id="marketing" data-name="Marketing" fs-consent-element="checkbox-marketing" class="w-checkbox-input fs-consent_checkbox"/><span for="marketing" class="fs-consent_checkbox_label w-form-label">Marketing</span></label><p class="fs-consent_prefs_description">Cookies para fins de marketing e publicidade.<br/></p></div><div fs-consent-element="internal-category-personalization" class="fs-consent_prefs_option"><label class="w-checkbox fs-consent_checkbox_field-3"><input type="checkbox" name="personalization" id="personalization" data-name="Personalization" fs-consent-element="checkbox-personalization" class="w-checkbox-input fs-consent_checkbox"/><span for="personalization" class="fs-consent_checkbox_label w-form-label">Personalização</span></label><p class="fs-consent_prefs_description">Remembers your preferences and provides enhanced features.<br/></p></div><div fs-consent-element="internal-category-analytics" class="fs-consent_prefs_option"><label class="w-checkbox fs-consent_checkbox_field-4"><input type="checkbox" name="analytics" id="analytics" data-name="Analytics" fs-consent-element="checkbox-analytics" class="w-checkbox-input fs-consent_checkbox"/><span for="analytics" class="fs-consent_checkbox_label w-form-label">Analytics</span></label><p class="fs-consent_prefs_description">Measures usage and improves your experience.<br/></p></div></div><div class="fs-consent_prefs_buttons"><a fs-consent-element="deny" href="#" class="fs-consent_decline w-button">Rejeitar todos</a><a fs-consent-element="allow" href="#" class="fs-consent_allow w-button">Aceitar todos</a><input type="submit" data-wait="Please wait..." class="fs-consent_prefs_submit w-button" value="Salvar preferências"/></div><div fs-consent-element="close" class="fs-consent_prefs_close"><div class="fs-consent_prefs_close-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path id="icon" d="M3.41424 2.25L2.00003 3.66421L6.58582 8.25L1.99988 12.8359L3.41409 14.2502L8.00003 9.66421L12.5854 14.2496L13.9996 12.8354L9.41424 8.25L13.9995 3.66476L12.5853 2.25055L8.00003 6.83579L3.41424 2.25Z" fill="currentColor"></path></g></svg></div></div></div></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><div fs-consent-element="close" class="fs-consent_prefs_overlay"></div></div></div><div fs-consent-easing="ease" fs-consent-element="fixed-preferences" fs-consent-animation="slide-up" fs-consent-duration="300" class="fs-consent_open-prefs"><div fs-consent-element="open-preferences" class="fs-consent_open-prefs_wrapper"><div class="fs-consent_open-prefs_icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 29 28" fill="none"><rect x="0.635254" fill="none"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M20.377 4.2453C20.9009 4.2453 21.3264 4.67081 21.3264 5.19476C21.3264 5.7187 20.9009 6.14421 20.377 6.14421C19.853 6.14421 19.4275 5.7187 19.4275 5.19476C19.4291 4.67081 19.853 4.2453 20.377 4.2453ZM20.631 12.5141C21.4503 13.7367 22.4871 14.1114 23.8335 13.2842C23.8779 13.7446 23.889 14.2146 23.8652 14.6909C23.6001 19.9558 19.1179 24.0092 13.853 23.7441C8.58975 23.4774 4.53631 18.9952 4.80146 13.7319C5.06502 8.46705 9.70275 4.36914 14.966 4.63429C14.4992 6.09499 14.8946 7.39216 16.0822 7.83355C15.0057 11.2916 17.4095 13.5541 20.631 12.5141ZM9.55668 11.833C10.3458 11.833 10.984 12.4729 10.984 13.2604C10.984 14.0479 10.3442 14.6877 9.55668 14.6877C8.76758 14.6877 8.12932 14.0479 8.12932 13.2604C8.12932 12.4729 8.76917 11.833 9.55668 11.833ZM14.0531 13.6525C14.5072 13.6525 14.8755 14.0209 14.8755 14.475C14.8755 14.9291 14.5072 15.2974 14.0531 15.2974C13.599 15.2974 13.2307 14.9291 13.2307 14.475C13.2291 14.0209 13.5974 13.6525 14.0531 13.6525ZM10.4839 17.0407C11.038 17.0407 11.4873 17.4901 11.4873 18.0442C11.4873 18.5983 11.038 19.0476 10.4839 19.0476C9.92979 19.0476 9.48047 18.5983 9.48047 18.0442C9.48047 17.4885 9.92979 17.0407 10.4839 17.0407ZM12.6464 9.36252C13.0814 9.36252 13.4323 9.715 13.4323 10.1484C13.4323 10.5835 13.0798 10.9344 12.6464 10.9344C12.2113 10.9344 11.8605 10.5819 11.8605 10.1484C11.8605 9.715 12.2129 9.36252 12.6464 9.36252ZM16.9173 17.3916C17.6461 17.3916 18.2352 17.9823 18.2352 18.7094C18.2352 19.4382 17.6445 20.0272 16.9173 20.0272C16.1886 20.0272 15.5995 19.4366 15.5995 18.7094C15.5995 17.9823 16.1902 17.3916 16.9173 17.3916ZM19.6927 7.91293C20.1817 7.91293 20.5786 8.30986 20.5786 8.79888C20.5786 9.2879 20.1817 9.68483 19.6927 9.68483C19.2037 9.68483 18.8067 9.2879 18.8067 8.79888C18.8067 8.30986 19.2037 7.91293 19.6927 7.91293Z" fill="currentColor"></path></svg></div><div class="fs-consent_open-prefs_text">Preferências</div></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64dbdfb5c42ae70621943853" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript"></script><script src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/js/webflow.schunk.55013749bf7eafc3.js" type="text/javascript"></script><script src="https://cdn.prod.website-files.com/64dbdfb5c42ae70621943853/js/webflow.609cb3da.e2f027aa691da66c.js" type="text/javascript"></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFPBVHQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script async src="https://get.geojs.io/v1/ip/geo.js"></script>
+<script>
+  function geoip(json) {
+    const latitude = document.createElement("meta");
+    const longitude = document.createElement("meta");
+
+    latitude.name = "latitude";
+    longitude.name = "longitude";
+    latitude.content = json.latitude;
+    longitude.content = json.longitude;
+
+    document.head.appendChild(latitude);
+    document.head.appendChild(longitude);
+  }
+</script>
+
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+<script>
+    (function () {
+        window.onload = function () {
+            new BlipChat()
+                .withAppKey('Ymx1ZWZpdHByaW5jaXBhbDE6NjdlODY0ZTctOTZiOC00MjZlLWE5OTItM2FlZjMwYWZmYzFh')
+                .withButton({"color":"#0096fa","icon":""})
+                .withCustomCommonUrl('https://bluefit-academia.chat.blip.ai/')
+                .build();
+        }
+    })();
+</script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+function getVisibleSlides(slideClass, minSlidesPerView) {
+  const slides = document.querySelectorAll(slideClass);
+  const totalSlides = slides.length;
+
+  return totalSlides >= minSlidesPerView ? minSlidesPerView : totalSlides;
+}
+
+
+$(".slider-vantagens_component").each((function(e){new Swiper($(this).find(".swiper")[0],{slidesPerView:1.1,spaceBetween:"2%",speed:300,autoplay:{delay:2500},keyboard:!0,loop:!0,mousewheel:{forceToAxis:!0},slideToClickedSlide:!0,followFinger:!1,breakpoints:{480:{slidesPerView:1.5},768:{slidesPerView:2.5},992:{slidesPerView:3.5}},navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0],disabledClass:"is-disabled"}})})),$(".slider-programas_component").each((function(e){new Swiper($(this).find(".swiper")[0],{slidesPerView:1.5,spaceBetween:"2%",speed:300,keyboard:!0,mousewheel:{forceToAxis:!0},slideToClickedSlide:!0,followFinger:!1,breakpoints:{480:{slidesPerView:getVisibleSlides(".swiper-slide.is-slider-programas", 1.5)},768:{slidesPerView:getVisibleSlides(".swiper-slide.is-slider-programas", 2.5)},992:{slidesPerView:getVisibleSlides(".swiper-slide.is-slider-programas", 3.5),spaceBetween:!1},1600:{slidesPerView:getVisibleSlides(".swiper-slide.is-slider-programas",4.5),spaceBetween:!1}},navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0],disabledClass:"is-disabled"}})})),$(".slider-hero_component").each((function(e){let i=300;void 0!==$(this).attr("slider-duration")&&(i=+$(this).attr("slider-duration"));new Swiper($(this).find(".swiper")[0],{speed:i,loop:false,autoplay:{delay:1500},autoHeight:!1,centeredSlides:false,followFinger:!0,freeMode:!1,slideToClickedSlide:!1,slidesPerView:1,rewind:!1,mousewheel:{forceToAxis:!0},keyboard:{enabled:!0,onlyInViewport:!0},pagination:{el:$(this).find(".swiper-bullet-wrapper")[0],bulletActiveClass:"is-active",bulletClass:"swiper-bullet",bulletElement:"button",clickable:!0},slideActiveClass:"is-active",slideDuplicateActiveClass:"is-active"})})),$(".slider-ambientes_component").each((function(e){new Swiper($(this).find(".swiper")[0],{slidesPerView:1,speed:300,keyboard:!0,loop:!0,autoplay:{delay:2500},mousewheel:{forceToAxis:!0},slideToClickedSlide:!0,followFinger:!1,navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0],disabledClass:"is-disabled"}})})),$(".slider-sobre-nos_component").each((function(e){new Swiper($(this).find(".swiper.is-slider-sobre-nos")[0],{loop:!0,slidesPerView:1,spaceBetween:"5%",navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0]}}),new Swiper($(this).find(".swiper.is-slider-sobre-nos_name")[0],{slidesPerView:1})})),$(".slider-eventos-realizados_component").each((function(e){let i=!1;"true"===$(this).attr("loop-mode")&&(i=!0);let s=300;void 0!==$(this).attr("slider-duration")&&(s=+$(this).attr("slider-duration"));new Swiper($(this).find(".swiper")[0],{speed:s,loop:i,centeredSlides:i,followFinger:!0,freeMode:!1,slideToClickedSlide:!1,slidesPerView:1,mousewheel:{forceToAxis:!0},navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0],disabledClass:"is-disabled"}})})),$(".slider-mercado_component").each((function(e){new Swiper($(this).find(".swiper")[0],{freeMode:!0,slidesPerView:1.5,spaceBetween:"2%",mousewheel:{forceToAxis:!0},breakpoints:{480:{slidesPerView:1},768:{slidesPerView:2.5},992:{slidesPerView:3.5}},navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0],disabledClass:"is-disabled"}})})),$(".slider-nossos-valores_component").each((function(e){new Swiper($(this).find(".swiper.is-slider-valores")[0],{followFinger:!0,freeMode:!1,slideToClickedSlide:!1,slidesPerView:1.5,spaceBetween:"2%",mousewheel:{forceToAxis:!0},breakpoints:{480:{slidesPerView:1},768:{slidesPerView:2.5},992:{slidesPerView:3.5}},navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0],disabledClass:"is-disabled"}})})),$(".slider-contratos_component").each((function(e){new Swiper($(this).find(".swiper.is-slider-contratos_regulamentos")[0],{slidesPerView:1.5,spaceBetween:"2%",speed:300,keyboard:!0,loop:!1,mousewheel:{forceToAxis:!0},breakpoints:{480:{slidesPerView:1},768:{slidesPerView:1.5},992:{slidesPerView:3.5}},slideToClickedSlide:!0,followFinger:!1,navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0]}})})),$(".slider-termos_component").each((function(e){new Swiper($(this).find(".swiper.is-slider-contratos_termos")[0],{slidesPerView:1.5,spaceBetween:"2%",speed:300,keyboard:!0,loop:!1,mousewheel:{forceToAxis:!0},breakpoints:{480:{slidesPerView:1},768:{slidesPerView:1.5},992:{slidesPerView:3.5}},slideToClickedSlide:!0,followFinger:!1,navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0]}})})),$(".slider-politica_component").each((function(e){new Swiper($(this).find(".swiper.is-slider-contratos_politica")[0],{slidesPerView:1.5,spaceBetween:"2%",speed:300,keyboard:!0,loop:!1,mousewheel:{forceToAxis:!0},breakpoints:{480:{slidesPerView:1},768:{slidesPerView:1.5},992:{slidesPerView:3.5}},slideToClickedSlide:!0,followFinger:!1,navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0]}})})),$(".slider-minutas_component").each((function(e){new Swiper($(this).find(".swiper.is-slider-contratos_minutas")[0],{slidesPerView:1.5,spaceBetween:"2%",speed:300,keyboard:!0,loop:!1,mousewheel:{forceToAxis:!0},breakpoints:{480:{slidesPerView:1},768:{slidesPerView:1.5},992:{slidesPerView:3.5}},slideToClickedSlide:!0,followFinger:!1,navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0]}})})),$(".slider-aula-interna_component").each((function(e){new Swiper($(this).find(".swiper.is-slider-ambiente-aula-interna")[0],{slidesPerView:1,spaceBetween:"2%",speed:300,keyboard:!0,mousewheel:{forceToAxis:!0},breakpoints:{480:{slidesPerView:1},768:{slidesPerView:1.5},992:{slidesPerView:3.5}},slideToClickedSlide:!0,followFinger:!1,navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0]}})})),$(".slider-img-aula-interna_component").each((function(e){new Swiper($(this).find(".swiper.is-slider-imagens-aula-interna")[0],{slidesPerView:1,spaceBetween:"2%",speed:300,keyboard:!0,loop:!0,mousewheel:{forceToAxis:!0},slideToClickedSlide:!0,followFinger:!1,navigation:{nextEl:$(this).find(".swiper-next")[0],prevEl:$(this).find(".swiper-prev")[0]}})}));
+</script>
+
+
+<script>
+  hiddenSections("https://x5ps-wz9s-zww5.b2.xano.io/api:dW0iy1K_/home");
+</script></body></html>

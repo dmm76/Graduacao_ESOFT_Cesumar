@@ -1,0 +1,112 @@
+# Gerar o conteúdo em HTML com CSS embutido
+html_content = """
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo Estrutura de Dados I</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #00509e;
+        }
+        h2 {
+            color: #003f7f;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #00509e;
+        }
+        ul {
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resumo Didático — Estrutura de Dados I</h1>
+
+    <div class="section">
+        <h2>Unidade 1 – Ponteiros</h2>
+        <h3>Objetivo:</h3>
+        <p>Compreender a base para estruturas dinâmicas de dados.</p>
+        <ul>
+            <li><strong>Homogêneas e Heterogêneas:</strong> vetores e registros (structs).</li>
+            <li><strong>Ponteiros:</strong> acesso a memória com <code>&variavel</code> e <code>*ponteiro</code>.</li>
+            <li><strong>Alocação dinâmica:</strong> uso de <code>malloc()</code> para criar dados em tempo de execução.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Unidade 2 – Pilhas e Filas</h2>
+        <h3>Objetivo:</h3>
+        <p>Explorar estruturas lineares de armazenamento.</p>
+        <ul>
+            <li><strong>Pilha (Stack):</strong> LIFO - Último a entrar, primeiro a sair.</li>
+            <li><strong>Fila (Queue):</strong> FIFO - Primeiro a entrar, primeiro a sair.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Unidade 3 – Listas Dinâmicas</h2>
+        <h3>Objetivo:</h3>
+        <p>Introduzir estruturas encadeadas mais flexíveis.</p>
+        <ul>
+            <li><strong>Listas encadeadas:</strong> cada nó aponta para o próximo.</li>
+            <li><strong>Variações:</strong> duplamente encadeadas e circulares.</li>
+            <li><strong>Aplicações:</strong> pilhas e filas com flexibilidade de tamanho.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Unidade 4 – Grafos</h2>
+        <h3>Objetivo:</h3>
+        <p>Modelar e representar relacionamentos complexos.</p>
+        <ul>
+            <li><strong>Definição:</strong> vértices conectados por arestas.</li>
+            <li><strong>Representações:</strong> matriz de adjacência e lista de adjacência.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Unidade 5 – Busca em Grafos</h2>
+        <h3>Objetivo:</h3>
+        <p>Navegar e processar grafos.</p>
+        <ul>
+            <li><strong>DFS:</strong> Busca em profundidade.</li>
+            <li><strong>BFS:</strong> Busca em largura.</li>
+            <li><strong>Dijkstra:</strong> menor caminho entre vértices.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Conclusão</h2>
+        <p>
+            Este livro ensina a usar estruturas de dados para resolver problemas reais,
+            otimizar o uso da memória e criar programas mais eficientes.
+        </p>
+    </div>
+</body>
+</html>
+"""
+
+# Salvar o arquivo HTML
+html_path = "/mnt/data/Resumo_Estrutura_de_Dados.html"
+with open(html_path, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+html_path

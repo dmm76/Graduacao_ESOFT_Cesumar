@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        
+      }
+      div.storage {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        gap: 1rem;
+        margin: auto;
+        padding-top: 5rem;
+
+      }
+      .botao {
+        border: 1px solid steelblue;
+        display: inline-block;
+        align-items: center;
+        padding: 3rem;
+        margin: auto;
+      }
+
+      .esconder {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .fade {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+      }
+      .fade.esconder {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+
+    <title>Exemplo de EventListener</title>
+  </head>
+  <body>
+    <div class="botao">
+      <h2 id="mensagem">Exemplo de EventListener</h2>
+      <button id="meubotao" class="fade">Clique aqui</button>
+    </div>
+    <div class="storage">
+      <input type="text" id="nome" placeholder="Digite seu nome" />
+      <button onclick="salvarNome()">Salvar</button>
+      <button onclick="mostrarNome()">Mostrar</button>
+      <p id="saida"></p>
+    </div>
+    <script defer>
+      function salvarNome() {
+        const nome = document.getElementById("nome").value;
+        localStorage.setItem("nomeSalvo", nome); // salva com chave "nomeSalvo"
+      }
+
+      function mostrarNome() {
+        const nome = localStorage.getItem("nomeSalvo"); // busca pela chave
+        document.getElementById("saida").textContent = "Olá, " + nome;
+      }
+      document
+        .getElementById("meubotao")
+        .addEventListener("click", function () {
+          document.getElementById("meubotao").innerHTML = "Botao Clicado";
+          document.getElementById("mensagem").textContent =
+            "Botao voltara em 5 segundos";
+          const botao = document.getElementById("meubotao");
+          botao.classList.add("esconder");
+          setTimeout(() => {
+            document.getElementById("mensagem").textContent =
+              "Exemplo de EventListener";
+            document.getElementById("meubotao").innerHTML = "Clique aqui";
+            botao.classList.remove("esconder");
+          }, 5000);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem quer ser um milionário?</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho do jogo -->
+        <header class="header">
+            <h1 class="titulo">Quem quer ser um milionário?</h1>
+            <div class="info-jogo">
+                <span class="rodada-atual">Pergunta <span id="numeroRodada">1</span> de 15</span>
+                <span class="premio-atual">Valendo: R$ <span id="premioAtual">1.000</span></span>
+            </div>
+        </header>
+
+        <!-- Área principal do jogo -->
+        <main class="area-jogo">
+            <!-- Pergunta -->
+            <div class="pergunta-container">
+                <h2 id="enunciado" class="enunciado">Carregando pergunta...</h2>
+            </div>
+
+            <!-- Alternativas -->
+            <div class="alternativas-container">
+                <button class="alternativa alternativa1" data-index="0">
+                    <span class="letra">A</span>
+                    <span class="texto-alternativa"></span>
+                </button>
+                <button class="alternativa alternativa2" data-index="1">
+                    <span class="letra">B</span>
+                    <span class="texto-alternativa"></span>
+                </button>
+                <button class="alternativa alternativa3" data-index="2">
+                    <span class="letra">C</span>
+                    <span class="texto-alternativa"></span>
+                </button>
+                <button class="alternativa alternativa4" data-index="3">
+                    <span class="letra">D</span>
+                    <span class="texto-alternativa"></span>
+                </button>
+            </div>
+
+            <!-- Controles -->
+            <div class="controles">
+                <button id="btnPerguntar" class="btn btn-perguntar" disabled>
+                    Confirmar Resposta
+                </button>
+                <button id="btnParar" class="btn btn-parar">
+                    Parar
+                </button>
+            </div>
+
+            <!-- Ajudas -->
+            <div class="ajudas">
+                <button class="ajuda" id="ajuda-cartas" title="Cartas">
+                    📧
+                </button>
+                <button class="ajuda" id="ajuda-pular" title="Pular">
+                    ⏭️
+                </button>
+                <button class="ajuda" id="ajuda-plateia" title="Plateia">
+                    👥
+                </button>
+                <button class="ajuda" id="ajuda-eliminar" title="Eliminar 2">
+                    ❌
+                </button>
+            </div>
+        </main>
+
+        <!-- Sidebar com prêmios -->
+        <aside class="sidebar">
+            <h3>Prêmios</h3>
+            <div class="lista-premios" id="listaPremios">
+                <!-- Preenchido via JavaScript -->
+            </div>
+        </aside>
+
+        <!-- Modal de mensagens -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <h3 id="modalTitulo">Título</h3>
+                <p id="modalMensagem">Mensagem</p>
+                <div id="modalBotoes" class="modal-botoes">
+                    <button id="btnModalOk" class="btn btn-ok">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Área de mensagens -->
+        <div class="mensagem-container">
+            <p id="mensagem" class="mensagem"></p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="extras.js" defer></script>
+</body>
+</html>
